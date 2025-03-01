@@ -83,10 +83,15 @@ C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperSt
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.DeveloperStoreBack.props
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.DeveloperStoreBack.props
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\Develope.B4E93B14.Up2Date
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\DeveloperStoreBack.dll
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\refint\DeveloperStoreBack.dll
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\DeveloperStoreBack.pdb
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\DeveloperStoreBack.genruntimeconfig.cache
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\obj\Debug\net9.0\ref\DeveloperStoreBack.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\bin\Debug\net9.0\DnsClient.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\bin\Debug\net9.0\Snappier.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\DeveloperStoreBack\bin\Debug\net9.0\ZstdSharp.dll

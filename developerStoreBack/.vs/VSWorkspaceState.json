@@ -2,8 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\DeveloperStoreBack",
-    "\\DeveloperStoreBack\\src"
+    "\\DeveloperStoreBack\\src",
+    "\\DeveloperStoreBack\\src\\API",
+    "\\DeveloperStoreBack\\src\\API\\Controller",
+    "\\DeveloperStoreBack\\src\\Application",
+    "\\DeveloperStoreBack\\src\\Application\\Dtos",
+    "\\DeveloperStoreBack\\src\\Domain",
+    "\\DeveloperStoreBack\\src\\Domain\\Entities",
+    "\\DeveloperStoreBack\\src\\Infrastructure"
   ],
-  "SelectedNode": "\\DeveloperStoreBack\\DeveloperStoreBack.csproj",
+  "SelectedNode": "\\DeveloperStoreBack\\src\\Application\\Dtos\\UserLoginDto.cs",
   "PreviewInSolutionExplorer": false
 }
