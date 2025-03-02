@@ -6,21 +6,30 @@ developerStoreBack/
 │   ├── Api/
 │   │   ├── Controllers/
 │   │       └── UserController.cs
+│   │       └── SaleController.cs  // Controlador para vendas
 │   │   └── Program.cs
 │   ├── Application/
 │   │   ├── DTOs/
 │   │       └── UserLoginDto.cs
-│   │   ├── Services/           // Adicionada a pasta Services
+│   │       └── SaleDto.cs          // DTO para vendas
+│   │   ├── Services/
 │   │       └── UserService.cs
+│   │       └── SaleService.cs      // Serviço para vendas
 │   ├── Domain/
-│   │   └── Entities/
+│   │   ├── Entities/
 │   │       └── User.cs
+│   │       └── Sale.cs             // Entidade para vendas
+│   │   ├── Repositories/
+│   │       └── IUserRepository.cs  // Interface do repositório de usuários
+│   │       └── ISaleRepository.cs   // Interface do repositório de vendas
 │   ├── Infrastructure/
 │   │   └── Data/
 │   │       └── Contexts/
 │   │           └── MongoDbContext.cs
+│   │       └── Repositories/
+│   │           └── UserRepository.cs // Implementação do repositório de usuários
+│   │           └── SaleRepository.cs  // Implementação do repositório de vendas
 └── ...
-
 ## Configuração
 
 1. Clone o repositório.

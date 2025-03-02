@@ -14,5 +14,6 @@ namespace DeveloperStoreBack.Infrastructure.Data.Contexts
         }
 
         public IMongoCollection<User> Users => _database.GetCollection<User>("Users");
+        public IMongoCollection<Sale> Sales => _database.GetCollection<Sale>("Sales");
     }
 }

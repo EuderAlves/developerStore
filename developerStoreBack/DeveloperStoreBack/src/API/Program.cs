@@ -4,6 +4,11 @@ using Microsoft.Extensions.Hosting;
 using MongoDB.Driver;
 using DeveloperStoreBack.Infrastructure.Data.Contexts;
 using DeveloperStoreBack.Application.Services;
+using DeveloperStoreBack.Infrastructure.Data.Repositories;
+using DeveloperStoreBack.Domain.Repositories;
+using DeveloperStoreBack.Domain.Entities;
+using DeveloperStoreBack.Application.DTOs;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +16,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<UserService>();
+builder.Services.AddSingleton<ISaleRepository, SaleRepository>();
+builder.Services.AddSingleton<SaleService>();
 
 builder.Services.AddSingleton<MongoDbContext>(sp =>
 {
