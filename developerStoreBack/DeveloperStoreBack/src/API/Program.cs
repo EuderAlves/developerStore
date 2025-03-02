@@ -18,6 +18,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddSingleton<ISaleRepository, SaleRepository>();
 builder.Services.AddSingleton<SaleService>();
+builder.Services.AddSingleton<IItemRepository, ItemRepository>();
+builder.Services.AddSingleton<ItemService>();
 
 builder.Services.AddSingleton<MongoDbContext>(sp =>
 {

@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Controller\\ItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Api\\Controller\\ItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Controller\\SaleController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Api\\Controller\\SaleController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\Services\\ItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Application\\Services\\ItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Domain\\Entities\\Sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Domain\\Entities\\Sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Infrastructure\\Data\\Repositories\\ItemRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Infrastructure\\Data\\Repositories\\ItemRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\Services\\SaleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Application\\Services\\SaleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Domain\\Repositories\\ISaleRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Domain\\Repositories\\ISaleRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\DTOs\\SaleDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Application\\DTOs\\SaleDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Controller\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Api\\Controller\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\DeveloperStoreBack.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\DeveloperStoreBack.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Application\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Domain\\Repositories\\IItemRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack\\src\\Domain\\Repositories\\IItemRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SaleController.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Controller\\SaleController.cs",
-              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Api\\Controller\\SaleController.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Controller\\SaleController.cs",
-              "RelativeToolTip": "DeveloperStoreBack\\src\\Api\\Controller\\SaleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Infrastructure\\Data\\Repositories\\ItemRepository.cs",
+              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Infrastructure\\Data\\Repositories\\ItemRepository.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Infrastructure\\Data\\Repositories\\ItemRepository.cs",
+              "RelativeToolTip": "DeveloperStoreBack\\src\\Infrastructure\\Data\\Repositories\\ItemRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T01:40:23.492Z",
+              "WhenOpened": "2025-03-02T02:46:04.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SaleService.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\Services\\SaleService.cs",
-              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Application\\Services\\SaleService.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\Services\\SaleService.cs",
-              "RelativeToolTip": "DeveloperStoreBack\\src\\Application\\Services\\SaleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Title": "IItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Domain\\Repositories\\IItemRepository.cs",
+              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Domain\\Repositories\\IItemRepository.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Domain\\Repositories\\IItemRepository.cs",
+              "RelativeToolTip": "DeveloperStoreBack\\src\\Domain\\Repositories\\IItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T01:40:07.726Z",
+              "WhenOpened": "2025-03-02T02:45:46.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ISaleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Domain\\Repositories\\ISaleRepository.cs",
-              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Domain\\Repositories\\ISaleRepository.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Domain\\Repositories\\ISaleRepository.cs",
-              "RelativeToolTip": "DeveloperStoreBack\\src\\Domain\\Repositories\\ISaleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ItemService.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\Services\\ItemService.cs",
+              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Application\\Services\\ItemService.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\Services\\ItemService.cs",
+              "RelativeToolTip": "DeveloperStoreBack\\src\\Application\\Services\\ItemService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAwwDsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T01:38:46.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SaleDto.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\DTOs\\SaleDto.cs",
-              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Application\\DTOs\\SaleDto.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\DTOs\\SaleDto.cs",
-              "RelativeToolTip": "DeveloperStoreBack\\src\\Application\\DTOs\\SaleDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T01:38:22.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Sale.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Domain\\Entities\\Sale.cs",
-              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Domain\\Entities\\Sale.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Domain\\Entities\\Sale.cs",
-              "RelativeToolTip": "DeveloperStoreBack\\src\\Domain\\Entities\\Sale.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAcwB8AAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T01:37:47.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DeveloperStoreBack.csproj",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\DeveloperStoreBack.csproj",
-              "RelativeDocumentMoniker": "DeveloperStoreBack\\DeveloperStoreBack.csproj",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\DeveloperStoreBack.csproj",
-              "RelativeToolTip": "DeveloperStoreBack\\DeveloperStoreBack.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-02T01:19:24.02Z",
+              "WhenOpened": "2025-03-02T02:39:59.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Program.cs",
-              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Api\\Program.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Program.cs",
-              "RelativeToolTip": "DeveloperStoreBack\\src\\Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Controller\\ItemController.cs",
+              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Api\\Controller\\ItemController.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Controller\\ItemController.cs",
+              "RelativeToolTip": "DeveloperStoreBack\\src\\Api\\Controller\\ItemController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwDEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T01:05:37.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Application\\Services\\UserService.cs",
-              "RelativeToolTip": "DeveloperStoreBack\\src\\Application\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T01:05:01.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Controller\\UserController.cs",
-              "RelativeDocumentMoniker": "DeveloperStoreBack\\src\\Api\\Controller\\UserController.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack\\src\\Api\\Controller\\UserController.cs",
-              "RelativeToolTip": "DeveloperStoreBack\\src\\Api\\Controller\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T01:02:24.863Z",
+              "WhenOpened": "2025-03-02T02:39:39.317Z",
               "EditorCaption": ""
             }
           ]

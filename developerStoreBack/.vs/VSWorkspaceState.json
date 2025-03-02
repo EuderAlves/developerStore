@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\DeveloperStoreBack",
+    "\\DeveloperStoreBack\\bin\\Debug",
+    "\\DeveloperStoreBack\\bin\\Release\\net9.0",
     "\\DeveloperStoreBack\\src",
-    "\\DeveloperStoreBack\\src\\Application",
-    "\\DeveloperStoreBack\\src\\Application\\DTOs",
-    "\\DeveloperStoreBack\\src\\Domain",
-    "\\DeveloperStoreBack\\src\\Domain\\Repositories",
+    "\\DeveloperStoreBack\\src\\Api",
+    "\\DeveloperStoreBack\\src\\Api\\Controller",
     "\\DeveloperStoreBack\\src\\Infrastructure",
     "\\DeveloperStoreBack\\src\\Infrastructure\\Data",
-    "\\DeveloperStoreBack\\src\\Infrastructure\\Data\\Repositories"
+    "\\DeveloperStoreBack\\src\\Infrastructure\\Data\\Contexts"
   ],
-  "SelectedNode": "\\DeveloperStoreBack\\src\\Domain\\Entities\\Sale.cs",
+  "SelectedNode": "\\DeveloperStoreBack\\DeveloperStoreBack.csproj",
   "PreviewInSolutionExplorer": false
 }

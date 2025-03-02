@@ -5,30 +5,21 @@ developerStoreBack/
 ├── src/
 │   ├── Api/
 │   │   ├── Controllers/
-│   │       └── UserController.cs
-│   │       └── SaleController.cs  // Controlador para vendas
-│   │   └── Program.cs
+│   │       └── ItemController.cs  // Controlador para os itens
 │   ├── Application/
 │   │   ├── DTOs/
-│   │       └── UserLoginDto.cs
-│   │       └── SaleDto.cs          // DTO para vendas
+│   │       └── ItemDto.cs          // DTO para itens
 │   │   ├── Services/
-│   │       └── UserService.cs
-│   │       └── SaleService.cs      // Serviço para vendas
+│   │       └── ItemService.cs      // Serviço para gerenciamento de itens
 │   ├── Domain/
 │   │   ├── Entities/
-│   │       └── User.cs
-│   │       └── Sale.cs             // Entidade para vendas
+│   │       └── Item.cs             // Entidade para itens
 │   │   ├── Repositories/
-│   │       └── IUserRepository.cs  // Interface do repositório de usuários
-│   │       └── ISaleRepository.cs   // Interface do repositório de vendas
+│   │       └── IItemRepository.cs   // Interface do repositório de itens
 │   ├── Infrastructure/
 │   │   └── Data/
-│   │       └── Contexts/
-│   │           └── MongoDbContext.cs
 │   │       └── Repositories/
-│   │           └── UserRepository.cs // Implementação do repositório de usuários
-│   │           └── SaleRepository.cs  // Implementação do repositório de vendas
+│   │           └── ItemRepository.cs // Implementação do repositório de itens
 └── ...
 ## Configuração
 
