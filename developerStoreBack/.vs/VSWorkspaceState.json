@@ -3,14 +3,14 @@
     "",
     "\\DeveloperStoreBack",
     "\\DeveloperStoreBack\\src",
-    "\\DeveloperStoreBack\\src\\API",
-    "\\DeveloperStoreBack\\src\\API\\Controller",
     "\\DeveloperStoreBack\\src\\Application",
-    "\\DeveloperStoreBack\\src\\Application\\Dtos",
+    "\\DeveloperStoreBack\\src\\Application\\Services",
     "\\DeveloperStoreBack\\src\\Domain",
     "\\DeveloperStoreBack\\src\\Domain\\Entities",
-    "\\DeveloperStoreBack\\src\\Infrastructure"
+    "\\DeveloperStoreBack\\src\\Infrastructure",
+    "\\DeveloperStoreBack\\src\\Infrastructure\\Data",
+    "\\DeveloperStoreBack\\src\\Infrastructure\\Data\\Contexts"
   ],
-  "SelectedNode": "\\DeveloperStoreBack\\src\\Application\\Dtos\\UserLoginDto.cs",
+  "SelectedNode": "\\DeveloperStoreBack\\src\\Application\\Services\\UserService.cs",
   "PreviewInSolutionExplorer": false
 }

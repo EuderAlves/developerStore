@@ -1,67 +1,46 @@
-using MongoDB.Driver;
 using Microsoft.AspNetCore.Mvc;
-using MongoDB.Bson;
-using System.Security.Cryptography;
-using System.Text;
+using DeveloperStoreBack.Application.DTOs;
+using DeveloperStoreBack.Application.Services;
+using DeveloperStoreBack.Domain.Entities;
 using System.Threading.Tasks;
 
-namespace DeveloperStoreBack.Application.Dtos
-{ 
-[ApiController]
-[Route("api/[controller]")]
-
-public class UserController : ControllerBase
-
+namespace DeveloperStoreBack.Api.Controllers
 {
-    private readonly MongoDbContext _context;
-    public UserController(MongoDbContext context)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UserController : ControllerBase
     {
-        _context = context;
-    }
+        private readonly UserService _userService;
 
-    [HttpPost("register")]
-    public async Task<IActionResult> Register([FromBody] User user)
-    {
-        if (user == null || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.PasswordHash))
+        public UserController(UserService userService)
         {
-            return BadRequest("Usuário inválido.");
+            _userService = userService;
         }
 
-        user.PasswordHash = HashPassword(user.PasswordHash);
-        await _context.Users.InsertOneAsync(user);
-
-        return CreatedAtAction(nameof(Register), new { id = user.Id }, user);
-    }
-
-    [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] UserLoginDto userDto)
-    {
-        var existingUser = await _context.Users
-            .Find(u => u.Email == userDto.Email)
-            .FirstOrDefaultAsync();
-
-        if (existingUser == null || !VerifyPassword(userDto.PasswordHash, existingUser.PasswordHash))
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] User user)
         {
-            return Unauthorized("Email ou senha inválidos.");
+            try
+            {
+                var registeredUser = await _userService.Register(user);
+                return CreatedAtAction(nameof(Register), new { id = registeredUser.Id }, registeredUser);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        return Ok("Login bem-sucedido!");
-    }
-
-    private string HashPassword(string password)
-    {
-        using (var sha256 = SHA256.Create())
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] UserLoginDto userDto)
         {
-            var bytes = Encoding.UTF8.GetBytes(password);
-            var hash = sha256.ComputeHash(bytes);
-            return Convert.ToBase64String(hash);
+            var isLoginSuccessful = await _userService.Login(userDto);
+            if (!isLoginSuccessful)
+            {
+                return Unauthorized("Email ou senha inválidos.");
+            }
+
+            return Ok("Login bem-sucedido!");
         }
     }
-
-    private bool VerifyPassword(string password, string storedHash)
-    {
-        var hash = HashPassword(password);
-        return hash == storedHash;
-    }
-}
 }

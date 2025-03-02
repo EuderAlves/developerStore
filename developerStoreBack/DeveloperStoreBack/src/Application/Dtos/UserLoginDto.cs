@@ -1,4 +1,4 @@
-namespace DeveloperStoreBack.Application.Dtos 
+namespace DeveloperStoreBack.Application.DTOs
 {
     public class UserLoginDto
     {

@@ -2,12 +2,15 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MongoDB.Driver;
+using DeveloperStoreBack.Infrastructure.Data.Contexts;
+using DeveloperStoreBack.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<UserService>();
 
 builder.Services.AddSingleton<MongoDbContext>(sp =>
 {
