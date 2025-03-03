@@ -21,8 +21,11 @@ namespace DeveloperStoreBack.Application.Services
 
         public async Task<Sale> RegisterSale(SaleDto saleDto)
         {
+            var nextSaleNumber = await _saleRepository.GetNextSaleNumberAsync();
+
             var sale = new Sale
             {
+                SaleNumber = nextSaleNumber,
                 SaleDate = DateTime.UtcNow,
                 CustomerEmail = saleDto.CustomerEmail,
                 Branch = saleDto.Branch,

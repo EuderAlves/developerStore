@@ -1,6 +1,6 @@
 using DeveloperStoreBack.Domain.Entities;
 using DeveloperStoreBack.Application.DTOs;
-using DeveloperStoreBack.Infrastructure.Data.Contexts;
+using DeveloperStoreBack.Domain.Repositories;
 using MongoDB.Driver;
 using System.Security.Cryptography;
 using System.Text;
@@ -10,11 +10,11 @@ namespace DeveloperStoreBack.Application.Services
 {
     public class UserService
     {
-        private readonly MongoDbContext _context;
+        private readonly IUserRepository _userRepository;
 
-        public UserService(MongoDbContext context)
+        public UserService(IUserRepository userRepository)
         {
-            _context = context;
+            _userRepository = userRepository;
         }
 
         public async Task<User> Register(UserRegisterDto userDto)
@@ -22,6 +22,12 @@ namespace DeveloperStoreBack.Application.Services
             if (userDto == null || string.IsNullOrEmpty(userDto.Email) || string.IsNullOrEmpty(userDto.PasswordHash) || string.IsNullOrEmpty(userDto.CompanyName))
             {
                 throw new ArgumentException("Usuário inválido.");
+            }
+
+            var existingUser = await _userRepository.GetUserByEmailAsync(userDto.Email);
+            if (existingUser != null)
+            {
+                throw new ArgumentException("O e-mail já está em uso.");
             }
 
             var user = new User
@@ -33,22 +39,36 @@ namespace DeveloperStoreBack.Application.Services
                 UserType = userDto.UserType
             };
 
-            await _context.Users.InsertOneAsync(user);
+            await _userRepository.InsertAsync(user);
             return user;
         }
 
-        public async Task<bool> Login(UserLoginDto userDto)
+        public async Task DeleteUser(string id)
         {
-            var existingUser = await _context.Users
-                .Find(u => u.Email == userDto.Email)
-                .FirstOrDefaultAsync();
+            var user = await _userRepository.GetUserByIdAsync(id);
+            if (user == null)
+            {
+                throw new ArgumentException("Usuário não encontrado.");
+            }
 
-            if (existingUser == null || !VerifyPassword(userDto.PasswordHash, existingUser.PasswordHash))
+            await _userRepository.DeleteAsync(id); 
+        }
+
+        public async Task<bool> Login(UserLoginDto userLoginDto)
+        {
+            if (userLoginDto == null || string.IsNullOrEmpty(userLoginDto.Email) || string.IsNullOrEmpty(userLoginDto.PasswordHash))
+            {
+                throw new ArgumentException("Credenciais inválidas.");
+            }
+
+            var user = await _userRepository.GetUserByIdAsync(userLoginDto.Email);
+
+            if (user == null)
             {
                 return false;
             }
 
-            return true;
+            return VerifyPassword(userLoginDto.PasswordHash, user.PasswordHash);
         }
 
         private string HashPassword(string password)

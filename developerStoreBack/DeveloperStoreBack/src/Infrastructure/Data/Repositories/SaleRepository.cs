@@ -42,5 +42,14 @@ namespace DeveloperStoreBack.Infrastructure.Data.Repositories
             var objectId = ObjectId.Parse(id);
             await _context.Sales.DeleteOneAsync(s => s.Id == objectId);
         }
+
+        public async Task<int> GetNextSaleNumberAsync()
+        {
+            var lastSale = await _context.Sales.Find(_ => true)
+                .SortByDescending(s => s.SaleNumber)
+                .FirstOrDefaultAsync();
+
+            return lastSale == null ? 1 : lastSale.SaleNumber + 1;
+        }
     }
 }

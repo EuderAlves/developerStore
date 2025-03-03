@@ -10,6 +10,7 @@ namespace DeveloperStoreBack.Domain.Entities
         [BsonId]
         public ObjectId Id { get; set; }
 
+        public int SaleNumber { get; set; }
         public required DateTime SaleDate { get; set; }
         public required string CustomerEmail { get; set; }
         public decimal TotalValue { get; set; }

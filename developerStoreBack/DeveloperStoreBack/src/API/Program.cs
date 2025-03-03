@@ -16,12 +16,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddSingleton<UserService>();
-builder.Services.AddSingleton<ISaleRepository, SaleRepository>();
+builder.Services.AddSingleton<IUserRepository, UserRepository>();
+
 builder.Services.AddSingleton<SaleService>();
-builder.Services.AddSingleton<IItemRepository, ItemRepository>();
-builder.Services.AddSingleton<ItemService>();
 builder.Services.AddSingleton<SaleNotificationService>();
+builder.Services.AddSingleton<ISaleRepository, SaleRepository>();
+
+builder.Services.AddSingleton<ItemService>();
+builder.Services.AddSingleton<IItemRepository, ItemRepository>();
 
 builder.Services.AddSingleton<MongoDbContext>(sp =>
 {

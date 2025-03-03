@@ -10,5 +10,6 @@ namespace DeveloperStoreBack.Domain.Repositories
         Task<IEnumerable<Sale>> GetSalesByCustomerEmailAsync(string email);
         Task UpdateAsync(Sale sale);
         Task DeleteAsync(string id);
+        Task<int> GetNextSaleNumberAsync();
     }
 }
