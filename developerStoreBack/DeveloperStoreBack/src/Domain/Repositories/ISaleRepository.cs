@@ -7,5 +7,6 @@ namespace DeveloperStoreBack.Domain.Repositories
     {
         Task InsertAsync(Sale sale);
         Task<Sale> GetSaleByIdAsync(string id);
+        Task<IEnumerable<Sale>> GetSalesByCustomerEmailAsync(string email);
     }
 }

@@ -17,16 +17,22 @@ namespace DeveloperStoreBack.Application.Services
             _context = context;
         }
 
-        public async Task<User> Register(User user)
+        public async Task<User> Register(UserRegisterDto userDto)
         {
-            if (user == null || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.PasswordHash))
+            if (userDto == null || string.IsNullOrEmpty(userDto.Email) || string.IsNullOrEmpty(userDto.PasswordHash) || string.IsNullOrEmpty(userDto.CompanyName))
             {
                 throw new ArgumentException("Usuário inválido.");
             }
 
-            user.PasswordHash = HashPassword(user.PasswordHash);
-            await _context.Users.InsertOneAsync(user);
+            var user = new User
+            {
+                Email = userDto.Email,
+                PasswordHash = HashPassword(userDto.PasswordHash),
+                Name = userDto.Name,
+                CompanyName = userDto.CompanyName
+            };
 
+            await _context.Users.InsertOneAsync(user);
             return user;
         }
 

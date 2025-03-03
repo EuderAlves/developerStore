@@ -30,6 +30,11 @@ namespace DeveloperStoreBack.Application.Services
             return sale;
         }
 
+        public async Task<IEnumerable<Sale>> GetSalesByCustomerEmail(string email)
+        {
+            return await _saleRepository.GetSalesByCustomerEmailAsync(email);
+        }
+
         private decimal CalculateTotalValue(List<SaleItemDto> items)
         {
             decimal total = 0;

@@ -26,5 +26,10 @@ namespace DeveloperStoreBack.Infrastructure.Data.Repositories
             var objectId = ObjectId.Parse(id);
             return await _context.Sales.Find(s => s.Id == objectId).FirstOrDefaultAsync();
         }
+
+        public async Task<IEnumerable<Sale>> GetSalesByCustomerEmailAsync(string email)
+        {
+            return await _context.Sales.Find(s => s.CustomerEmail == email).ToListAsync();
+        }
     }
 }

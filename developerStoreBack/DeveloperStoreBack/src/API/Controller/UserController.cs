@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using DeveloperStoreBack.Application.DTOs;
 using DeveloperStoreBack.Application.Services;
+using System;
 using DeveloperStoreBack.Domain.Entities;
 using System.Threading.Tasks;
 
@@ -18,11 +19,11 @@ namespace DeveloperStoreBack.Api.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] User user)
+        public async Task<IActionResult> Register([FromBody] UserRegisterDto userDto)
         {
             try
             {
-                var registeredUser = await _userService.Register(user);
+                var registeredUser = await _userService.Register(userDto);
                 return CreatedAtAction(nameof(Register), new { id = registeredUser.Id }, registeredUser);
             }
             catch (ArgumentException ex)
