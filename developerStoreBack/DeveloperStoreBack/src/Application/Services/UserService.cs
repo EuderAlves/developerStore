@@ -29,7 +29,8 @@ namespace DeveloperStoreBack.Application.Services
                 Email = userDto.Email,
                 PasswordHash = HashPassword(userDto.PasswordHash),
                 Name = userDto.Name,
-                CompanyName = userDto.CompanyName
+                CompanyName = userDto.CompanyName,
+                UserType = userDto.UserType
             };
 
             await _context.Users.InsertOneAsync(user);

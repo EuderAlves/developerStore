@@ -1,5 +1,6 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using DeveloperStoreBack.Domain.Enums;
 namespace DeveloperStoreBack.Domain.Entities
 {
     public class User
@@ -18,6 +19,9 @@ namespace DeveloperStoreBack.Domain.Entities
 
         [BsonRequired]
         public string CompanyName { get; set; }
+
+        [BsonRequired]
+        public UserType UserType { get; set; }
 
 
         public User()

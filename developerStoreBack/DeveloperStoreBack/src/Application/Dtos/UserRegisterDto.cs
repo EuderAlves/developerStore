@@ -1,3 +1,5 @@
+using DeveloperStoreBack.Domain.Enums;
+
 namespace DeveloperStoreBack.Application.DTOs
 {
     public class UserRegisterDto
@@ -6,5 +8,6 @@ namespace DeveloperStoreBack.Application.DTOs
         public required string PasswordHash { get; set; }
         public required string Name { get; set; }
         public required string CompanyName { get; set; }
+        public required UserType UserType { get; set; }
     }
 }
