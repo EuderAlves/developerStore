@@ -13,9 +13,11 @@ namespace DeveloperStoreBack.Domain.Entities
         public required DateTime SaleDate { get; set; }
         public required string CustomerEmail { get; set; }
         public decimal TotalValue { get; set; }
+        public decimal TotalDiscount { get; set; }
         public required string Branch { get; set; }
         public required List<SaleItem> Items { get; set; }
         public bool IsCanceled { get; set; }
+        public bool IsFinalized { get; set; }
 
         public Sale()
         {
@@ -29,6 +31,8 @@ namespace DeveloperStoreBack.Domain.Entities
         public required int Quantity { get; set; }
         public required decimal UnitPrice { get; set; }
         public decimal Discount { get; set; }
+        public decimal DiscountPercentage { get; set; }
         public decimal TotalValue => Quantity * UnitPrice - Discount;
+        public bool IsCanceled { get; set; }
     }
 }

@@ -8,6 +8,7 @@ using DeveloperStoreBack.Infrastructure.Data.Repositories;
 using DeveloperStoreBack.Domain.Repositories;
 using DeveloperStoreBack.Domain.Entities;
 using DeveloperStoreBack.Application.DTOs;
+using DeveloperStoreBack.Application.Notifications;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,7 @@ builder.Services.AddSingleton<ISaleRepository, SaleRepository>();
 builder.Services.AddSingleton<SaleService>();
 builder.Services.AddSingleton<IItemRepository, ItemRepository>();
 builder.Services.AddSingleton<ItemService>();
+builder.Services.AddSingleton<SaleNotificationService>();
 
 builder.Services.AddSingleton<MongoDbContext>(sp =>
 {

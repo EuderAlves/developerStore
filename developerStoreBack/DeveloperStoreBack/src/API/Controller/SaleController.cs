@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using DeveloperStoreBack.Application.DTOs;
-using DeveloperStoreBack.Domain.Entities;
-using DeveloperStoreBack.Domain.Repositories;
-using System.Collections.Generic;
 using DeveloperStoreBack.Application.Services;
+using DeveloperStoreBack.Domain.Entities;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace DeveloperStoreBack.Api.Controllers
@@ -31,6 +30,41 @@ namespace DeveloperStoreBack.Api.Controllers
         {
             var sales = await _saleService.GetSalesByCustomerEmail(email);
             return Ok(sales);
+        }
+
+        [HttpPost("{id}/cancel")]
+        public async Task<IActionResult> CancelSale(string id)
+        {
+            await _saleService.CancelSale(id);
+            return NoContent();
+        }
+
+        [HttpPost("{saleId}/items/{productId}/cancel")]
+        public async Task<IActionResult> CancelSaleItem(string saleId, string productId)
+        {
+            await _saleService.CancelSaleItem(saleId, productId);
+            return NoContent();
+        }
+
+        [HttpPut("{saleId}/items")]
+        public async Task<IActionResult> UpdateSaleItem(string saleId, [FromBody] SaleItemDto itemDto)
+        {
+            await _saleService.UpdateSaleItem(saleId, itemDto);
+            return NoContent();
+        }
+
+        [HttpPost("{id}/finalize")]
+        public async Task<IActionResult> FinalizeSale(string id)
+        {
+            await _saleService.FinalizeSale(id);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteSale(string id)
+        {
+            await _saleService.DeleteSale(id);
+            return NoContent();
         }
     }
 }

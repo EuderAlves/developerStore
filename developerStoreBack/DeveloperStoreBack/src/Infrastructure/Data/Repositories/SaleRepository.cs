@@ -31,5 +31,16 @@ namespace DeveloperStoreBack.Infrastructure.Data.Repositories
         {
             return await _context.Sales.Find(s => s.CustomerEmail == email).ToListAsync();
         }
+
+        public async Task UpdateAsync(Sale sale)
+        {
+            await _context.Sales.ReplaceOneAsync(s => s.Id == sale.Id, sale);
+        }
+
+        public async Task DeleteAsync(string id)
+        {
+            var objectId = ObjectId.Parse(id);
+            await _context.Sales.DeleteOneAsync(s => s.Id == objectId);
+        }
     }
 }

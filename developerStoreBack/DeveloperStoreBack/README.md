@@ -5,21 +5,24 @@ developerStoreBack/
 ├── src/
 │   ├── Api/
 │   │   ├── Controllers/
-│   │       └── ItemController.cs  // Controlador para os itens
+│   │       └── SaleController.cs
 │   ├── Application/
 │   │   ├── DTOs/
-│   │       └── ItemDto.cs          // DTO para itens
+│   │       └── SaleDto.cs
+│   │       └── SaleNotificationDto.cs // DTO para notificações
 │   │   ├── Services/
-│   │       └── ItemService.cs      // Serviço para gerenciamento de itens
+│   │       └── SaleService.cs
+│   │   └── Notifications/ // Nova pasta para gerenciar notificações
+│   │       └── SaleNotificationService.cs // Serviço para gerenciar alertas
 │   ├── Domain/
 │   │   ├── Entities/
-│   │       └── Item.cs             // Entidade para itens
+│   │       └── Sale.cs
 │   │   ├── Repositories/
-│   │       └── IItemRepository.cs   // Interface do repositório de itens
+│   │       └── ISaleRepository.cs
 │   ├── Infrastructure/
 │   │   └── Data/
 │   │       └── Repositories/
-│   │           └── ItemRepository.cs // Implementação do repositório de itens
+│   │           └── SaleRepository.cs
 └── ...
 ## Configuração
 
