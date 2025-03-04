@@ -6,33 +6,65 @@ O **DeveloperStoreBack** é uma aplicação que segue os princípios do Domain-D
 O projeto fornece uma API para gerenciar vendas, produtos e clientes, utilizando MongoDB como banco de dados.
 
 ## Estrutura do Projeto
+## Estrutura do Projeto
+
+- **DeveloperStoreBack**: Raiz do projeto.
+- **DeveloperStoreBack.Tests**: Contém todos os testes, organizados em subpastas para testes unitários, de integração e resultados.
+- **src**: Contém a lógica da aplicação, dividida em várias camadas:
+  - **Api**: Camada de apresentação, onde estão os controladores e a configuração da aplicação.
+  - **Application**: Contém a lógica de aplicação e casos de uso, incluindo DTOs e serviços.
+  - **Domain**: Define as entidades e repositórios do domínio, seguindo os princípios do DDD.
+  - **Infrastructure**: Implementações concretas de repositórios e serviços externos, como acesso a banco de dados.
 
 A estrutura do projeto é organizada em camadas conforme o padrão DDD:
-DeveloperStoreBack 
-│ ├── DeveloperStoreBack.Tests # Testes da aplicação 
-│ ├── Integration # Testes de integração 
-│ ├── Unit # Testes unitários 
-│ │ ├── Controllers 
-│ │ ├── Repositories 
-│ │ └── Services 
-│ └── SaleServiceTests.cs 
-│ └── src 
-├── Api # Camada de apresentação (API) 
-│ ├── Controllers # Controladores da API 
-│ ├── Properties # Configurações da API 
-│ └── Program.cs # Ponto de entrada da aplicação 
-│ ├── Application # Camada de aplicação (casos de uso) 
-│ ├── DTOs # Objetos de transferência de dados 
-│ ├── Services # Lógica de aplicação 
-│ └── DeveloperStoreBack.Application.csproj 
-│ ├── Domain # Camada de domínio (entidades, agregados, repositórios) 
-│ ├── Entities # Entidades do domínio 
-│ ├── Enums # Enumeradores do domínio 
-│ └── Repositories # Interfaces de repositórios 
-│ ├── IItemRepository.cs 
-│ ├── ISaleRepository.cs 
-│ └── IUserRepository.cs 
-│ └── Infrastructure # Camada de infraestrutura (implementações de repositórios, serviços externos)
+DeveloperStoreBack
+│
+├── DeveloperStoreBack.Tests           # Testes da aplicação
+│   ├── bin                             
+│   ├── coverage-report                 
+│   ├── Integration                    
+│   ├── obj                             
+│   ├── TestResults                     # Resultados dos testes
+│   └── Unit                            # Testes unitários
+│       ├── Controllers
+│       ├── Repositories
+│       ├── Services
+│       └── DeveloperStoreBack.Tests.csproj
+│
+└── src
+    ├── Api                             # Camada de apresentação (API)
+    │   ├── bin                         
+    │   ├── Controller                  # Controladores da API
+    │   ├── obj                         
+    │   ├── Properties                  # Arquivos de propriedades
+    │   │   ├── appsettings.Development.json
+    │   │   └── appsettings.json
+    │   ├── DeveloperStoreBack.Api.csproj
+    │   └── Program.cs                  # Ponto de entrada da aplicação
+    │
+    ├── Application                      # Camada de aplicação (casos de uso)
+    │   ├── bin                         
+    │   ├── DTOs                        # Objetos de transferência de dados
+    │   ├── obj                        
+    │   └── Services                    # Lógica de aplicação
+    │       └── DeveloperStoreBack.Application.csproj
+    │
+    ├── Domain                           # Camada de domínio (entidades, agregados, repositórios)
+    │   ├── bin                         
+    │   ├── Entities                     # Entidades do domínio
+    │   ├── Enums                        # Enumeradores do domínio
+    │   ├── obj                         
+    │   └── Repositories                 # Interfaces de repositórios
+    │       └── DeveloperStoreBack.Domain.csproj
+    │
+    └── Infrastructure                   # Camada de infraestrutura (implementações de repositórios, serviços externos)
+        ├── bin                        
+        ├── Data                         # Classes relacionadas a dados
+        │   └── Contexts                 # Contextos do banco de dados (ex: DbContext)
+        └── Repositories                 # Implementações de repositórios
+
+## Conclusão
+Esta estrutura permite uma separação clara de preocupações e facilita a manutenção e a escalabilidade do projeto.
 
 ### Tecnologias Utilizadas
 
@@ -81,7 +113,7 @@ Após iniciar a aplicação, você pode acessar a documentação da API através
 http://localhost:5000/swagger
 Aqui, você pode visualizar todos os endpoints disponíveis e testar cada um deles.
 # Item
-![image](https://github.com/user-attachments/assets/30db3231-ca62-4c4d-9ac1-41ec86160ca8)
+![image](https://github.com/user-attachments/assets/2ada7d0e-e7dc-4d77-a5a8-31e94b8a6293)
 # Sale
 ![image](https://github.com/user-attachments/assets/38daf867-f7ef-4946-a08c-aa52a8b89f95)
 # User
