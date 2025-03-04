@@ -14,7 +14,7 @@ COPY src/Api/*.csproj ./Api/
 RUN dotnet restore ./Api/DeveloperStoreBack.Api.csproj
 
 # Copie o restante dos arquivos e construa o projeto
-COPY src ./  # Certifique-se de que o diretório de cópia está correto
+COPY src ./  # A cópia agora deve funcionar corretamente
 RUN dotnet publish ./Api/DeveloperStoreBack.Api.csproj -c Release -o out
 
 # Use a imagem base do runtime do .NET
