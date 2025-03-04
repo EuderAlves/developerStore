@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Api"
+    "\\src\\Api",
+    "\\src\\Api\\Controller",
+    "\\src\\Application",
+    "\\src\\Application\\Services"
   ],
-  "SelectedNode": "\\src\\Api\\Program.cs",
+  "SelectedNode": "\\src\\Api\\DeveloperStoreBack.Api.csproj",
   "PreviewInSolutionExplorer": false
 }

@@ -61,7 +61,7 @@ namespace DeveloperStoreBack.Application.Services
                 throw new ArgumentException("Credenciais inválidas.");
             }
 
-            var user = await _userRepository.GetUserByIdAsync(userLoginDto.Email);
+            var user = await _userRepository.GetUserByEmailAsync(userLoginDto.Email);
 
             if (user == null)
             {
