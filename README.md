@@ -76,10 +76,6 @@ Essa organização promove a separação de responsabilidades e facilita a manut
 
 Para clonar o projeto, siga os passos abaixo:
 
-bash
-
-CopiarEditar
-
 `git clone https://github.com/EuderAlves/developerStore.git cd developerStore/DeveloperStoreBack`
 
 ---
@@ -89,19 +85,11 @@ CopiarEditar
 Certifique-se de que você tenha o **.NET 9.0** e o **MongoDB** instalados.
 
 1.  Restaure as dependências:
-    
-    bash
-    
-    CopiarEditar
-    
+       
     `dotnet restore`
     
 2.  Inicie o MongoDB, caso ainda não esteja em execução.
 3.  Execute o projeto:
-    
-    bash
-    
-    CopiarEditar
     
     `dotnet run --project src/Api`
     
