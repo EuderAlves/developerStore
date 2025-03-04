@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Api",
     "\\src\\Api\\Controller"
   ],
+  "SelectedNode": "\\src\\Infrastructure",
   "PreviewInSolutionExplorer": false
 }

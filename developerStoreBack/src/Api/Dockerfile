@@ -5,10 +5,10 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 # Copie os arquivos .csproj de todos os projetos
-COPY Application/*.csproj ./Application/
-COPY Domain/*.csproj ./Domain/
-COPY Infrastructure/*.csproj ./Infrastructure/
-COPY Api/*.csproj ./Api/
+COPY Application/*.csproj ../Application/
+COPY Domain/*.csproj ../Domain/
+COPY Infrastructure/*.csproj ../Infrastructure/
+COPY Api/*.csproj ../Api/
 
 # Restaure as dependências
 RUN dotnet restore ./Api/DeveloperStoreBack.Api.csproj
