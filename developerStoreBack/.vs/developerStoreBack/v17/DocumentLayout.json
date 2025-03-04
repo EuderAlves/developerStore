@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DockerFile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DockerFile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Controller\\ItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Api\\Controller\\ItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Api\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,26 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Dockerfile",
+              "RelativeToolTip": "src\\Api\\Dockerfile",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-04T12:14:21.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ItemController.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Controller\\ItemController.cs",
-              "RelativeDocumentMoniker": "src\\Api\\Controller\\ItemController.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Controller\\ItemController.cs",
-              "RelativeToolTip": "src\\Api\\Controller\\ItemController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T11:43:49.255Z",
+              "WhenOpened": "2025-03-04T15:39:04.004Z",
               "EditorCaption": ""
             }
           ]

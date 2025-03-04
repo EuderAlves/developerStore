@@ -5,6 +5,6 @@
     "\\src\\Api",
     "\\src\\Api\\Controller"
   ],
-  "SelectedNode": "\\DockerFile",
+  "SelectedNode": "\\src\\Api\\Dockerfile",
   "PreviewInSolutionExplorer": false
 }
