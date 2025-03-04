@@ -5,16 +5,16 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 # Copie os arquivos .csproj de todos os projetos
-COPY Application/*.csproj ../Application/
-COPY Domain/*.csproj ../Domain/
-COPY Infrastructure/*.csproj ../Infrastructure/
-COPY Api/*.csproj ../Api/
+COPY src/Application/*.csproj ./Application/
+COPY src/Domain/*.csproj ./Domain/
+COPY src/Infrastructure/*.csproj ./Infrastructure/
+COPY src/Api/*.csproj ./Api/
 
 # Restaure as dependências
 RUN dotnet restore ./Api/DeveloperStoreBack.Api.csproj
 
 # Copie o restante dos arquivos e construa o projeto
-COPY . .
+COPY src ./
 RUN dotnet publish ./Api/DeveloperStoreBack.Api.csproj -c Release -o out
 
 # Use a imagem base do runtime do .NET
