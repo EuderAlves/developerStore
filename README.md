@@ -101,8 +101,7 @@ Certifique-se de que você tenha o **.NET 9.0** e o **MongoDB** instalados.
 
 Após iniciar a aplicação, você pode acessar a documentação da API no **Swagger**.  
 Acesse o endereço: [http://localhost:5000/swagger](http://localhost:5000/swagger).
-
-# A API do Swagger está exposta online na seguinte URL: [https://developerstore.onrender.com/index.html](https://developerstore.onrender.com/index.html)"
+A API do Swagger está exposta online na seguinte URL: [https://developerstore.onrender.com/index.html](https://developerstore.onrender.com/index.html)"
 
 
 Aqui, você pode visualizar e testar todos os endpoints disponíveis.
