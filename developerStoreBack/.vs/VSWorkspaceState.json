@@ -3,12 +3,8 @@
     "",
     "\\src",
     "\\src\\Api",
-    "\\src\\Api\\Controller",
-    "\\src\\Application\\DTOs",
-    "\\src\\Domain\\Entities",
-    "\\src\\Infrastructure\\Data",
-    "\\src\\Infrastructure\\Data\\Repositories"
+    "\\src\\Api\\Controller"
   ],
-  "SelectedNode": "\\src\\Api\\Controller\\ItemController.cs",
+  "SelectedNode": "\\DockerFile",
   "PreviewInSolutionExplorer": false
 }
