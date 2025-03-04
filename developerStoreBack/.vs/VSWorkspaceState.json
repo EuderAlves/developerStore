@@ -4,14 +4,11 @@
     "\\src",
     "\\src\\Api",
     "\\src\\Api\\Controller",
-    "\\src\\Application",
     "\\src\\Application\\DTOs",
-    "\\src\\Domain",
     "\\src\\Domain\\Entities",
-    "\\src\\Infrastructure",
     "\\src\\Infrastructure\\Data",
     "\\src\\Infrastructure\\Data\\Repositories"
   ],
-  "SelectedNode": "\\DeveloperStoreBack.Tests\\Unit\\Controllers\\ItemControllerTests.cs",
+  "SelectedNode": "\\src\\Api\\Controller\\ItemController.cs",
   "PreviewInSolutionExplorer": false
 }
