@@ -57,3 +57,77 @@ DeveloperStoreBack
         ├── Data                         # Classes relacionadas a dados
         │   └── Contexts                 # Contextos do banco de dados (ex: DbContext)
         └── Repositories                 # Implementações de repositórios
+```
+Essa organização promove a separação de responsabilidades e facilita a manutenção e escalabilidade do projeto.
+
+---
+
+## Tecnologias Utilizadas
+
+*   **.NET 9.0**: Plataforma para desenvolvimento de aplicações web.
+*   **MongoDB**: Banco de dados NoSQL utilizado para armazenar dados.
+*   **Swagger**: Ferramenta para documentação e teste de APIs.
+*   **xUnit**: Framework de testes para .NET.
+*   **Moq**: Biblioteca para criação de mocks em testes unitários.
+
+---
+
+## Clonando o Projeto
+
+Para clonar o projeto, siga os passos abaixo:
+
+bash
+
+CopiarEditar
+
+`git clone https://github.com/EuderAlves/developerStore.git cd developerStore/DeveloperStoreBack`
+
+---
+
+## Executando o Projeto
+
+Certifique-se de que você tenha o **.NET 9.0** e o **MongoDB** instalados.
+
+1.  Restaure as dependências:
+    
+    bash
+    
+    CopiarEditar
+    
+    `dotnet restore`
+    
+2.  Inicie o MongoDB, caso ainda não esteja em execução.
+3.  Execute o projeto:
+    
+    bash
+    
+    CopiarEditar
+    
+    `dotnet run --project src/Api`
+    
+4.  Acesse a API no navegador através do seguinte endereço: [http://localhost:5000](http://localhost:5000)
+
+---
+
+## Usando o Swagger
+
+Após iniciar a aplicação, você pode acessar a documentação da API no **Swagger**.  
+Acesse o endereço: [http://localhost:5000/swagger](http://localhost:5000/swagger).
+
+Aqui, você pode visualizar e testar todos os endpoints disponíveis.
+
+---
+
+## Exemplos de Rotas
+
+### **Item**
+
+![Item](https://github.com/user-attachments/assets/2ada7d0e-e7dc-4d77-a5a8-31e94b8a6293)
+
+### **Sale**
+
+![Sale](https://github.com/user-attachments/assets/38daf867-f7ef-4946-a08c-aa52a8b89f95)
+
+### **User**
+
+![User](https://github.com/user-attachments/assets/68e058f1-be6e-444b-8e57-5bad9b0b2074)
