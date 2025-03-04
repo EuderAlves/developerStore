@@ -2,6 +2,7 @@ namespace DeveloperStoreBack.Application.DTOs
 {
     public class ItemDto
     {
+        public required string Id { get; set; }
         public required string ProductId { get; set; }
         public required string Name { get; set; }
         public required decimal UnitPrice { get; set; }

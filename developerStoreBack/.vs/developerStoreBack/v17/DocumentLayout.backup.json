@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack.Tests\\Unit\\Services\\SaleServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack.Tests\\Unit\\Services\\SaleServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack.Tests\\Unit\\Controllers\\ItemControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DeveloperStoreBack.Tests\\Unit\\Controllers\\ItemControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Domain\\Entities\\Sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Domain\\Entities\\Sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\Services\\SaleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Application\\Services\\SaleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\Services\\ItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Application\\Services\\ItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\Services\\IItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Application\\Services\\IItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\DTOs\\ItemDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Application\\DTOs\\ItemDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Controller\\ItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Api\\Controller\\ItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Sale.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Domain\\Entities\\Sale.cs",
-              "RelativeDocumentMoniker": "src\\Domain\\Entities\\Sale.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Domain\\Entities\\Sale.cs",
-              "RelativeToolTip": "src\\Domain\\Entities\\Sale.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Api\\Program.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Program.cs",
+              "RelativeToolTip": "src\\Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T00:16:47.655Z",
+              "WhenOpened": "2025-03-04T02:44:11.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SaleServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack.Tests\\Unit\\Services\\SaleServiceTests.cs",
-              "RelativeDocumentMoniker": "DeveloperStoreBack.Tests\\Unit\\Services\\SaleServiceTests.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack.Tests\\Unit\\Services\\SaleServiceTests.cs",
-              "RelativeToolTip": "DeveloperStoreBack.Tests\\Unit\\Services\\SaleServiceTests.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAmwJsAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IItemService.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\Services\\IItemService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\IItemService.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\Services\\IItemService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\IItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T00:08:23.427Z",
+              "WhenOpened": "2025-03-04T02:43:14.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SaleService.cs",
-              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\Services\\SaleService.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Services\\SaleService.cs",
-              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\Services\\SaleService.cs",
-              "RelativeToolTip": "src\\Application\\Services\\SaleService.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAUwN4AAAABAAAAAAAAAA==",
+              "Title": "ItemService.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\Services\\ItemService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\ItemService.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\Services\\ItemService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\ItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T00:06:27.879Z",
+              "WhenOpened": "2025-03-04T02:36:58.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\DTOs\\ItemDto.cs",
+              "RelativeDocumentMoniker": "src\\Application\\DTOs\\ItemDto.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Application\\DTOs\\ItemDto.cs",
+              "RelativeToolTip": "src\\Application\\DTOs\\ItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T02:30:41.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ItemControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack.Tests\\Unit\\Controllers\\ItemControllerTests.cs",
+              "RelativeDocumentMoniker": "DeveloperStoreBack.Tests\\Unit\\Controllers\\ItemControllerTests.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\DeveloperStoreBack.Tests\\Unit\\Controllers\\ItemControllerTests.cs",
+              "RelativeToolTip": "DeveloperStoreBack.Tests\\Unit\\Controllers\\ItemControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T02:23:03.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Controller\\ItemController.cs",
+              "RelativeDocumentMoniker": "src\\Api\\Controller\\ItemController.cs",
+              "ToolTip": "C:\\Users\\euder\\Desktop\\worknttdata\\developerStore\\developerStoreBack\\src\\Api\\Controller\\ItemController.cs",
+              "RelativeToolTip": "src\\Api\\Controller\\ItemController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T02:18:55.916Z",
               "EditorCaption": ""
             }
           ]

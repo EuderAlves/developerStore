@@ -1,16 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DeveloperStoreBack.Tests\\TestResults\\d50c7031-adac-41c2-be67-d98e8a6df15f",
     "\\src",
     "\\src\\Api",
     "\\src\\Api\\Controller",
+    "\\src\\Application",
+    "\\src\\Application\\DTOs",
     "\\src\\Domain",
-    "\\src\\Domain\\Repositories",
+    "\\src\\Domain\\Entities",
+    "\\src\\Infrastructure",
     "\\src\\Infrastructure\\Data",
-    "\\src\\Infrastructure\\Data\\Contexts",
     "\\src\\Infrastructure\\Data\\Repositories"
   ],
-  "SelectedNode": "\\DeveloperStoreBack.Tests",
+  "SelectedNode": "\\DeveloperStoreBack.Tests\\Unit\\Controllers\\ItemControllerTests.cs",
   "PreviewInSolutionExplorer": false
 }

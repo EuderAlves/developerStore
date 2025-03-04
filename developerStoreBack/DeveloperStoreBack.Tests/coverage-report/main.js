@@ -221,30 +221,30 @@ var assemblies = [
   {
     "name": "DeveloperStoreBack.Api",
     "classes": [
-      { "name": "DeveloperStoreBack.Api.Controllers.ItemController", "rp": "DeveloperStoreBack.Api_ItemController.html", "cl": 0, "ucl": 27, "cal": 27, "tl": 59, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeveloperStoreBack.Api.Controllers.ItemController", "rp": "DeveloperStoreBack.Api_ItemController.html", "cl": 27, "ucl": 0, "cal": 27, "tl": 59, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Api.Controllers.SaleController", "rp": "DeveloperStoreBack.Api_SaleController.html", "cl": 0, "ucl": 32, "cal": 32, "tl": 70, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Api.Controllers.UserController", "rp": "DeveloperStoreBack.Api_UserController.html", "cl": 0, "ucl": 23, "cal": 23, "tl": 54, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Program", "rp": "DeveloperStoreBack.Api_Program.html", "cl": 0, "ucl": 26, "cal": 26, "tl": 41, "cb": 0, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "WeatherForecast", "rp": "DeveloperStoreBack.Api_WeatherForecast.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 41, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Program", "rp": "DeveloperStoreBack.Api_Program.html", "cl": 0, "ucl": 47, "cal": 47, "tl": 59, "cb": 0, "tb": 10, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "WeatherForecast", "rp": "DeveloperStoreBack.Api_WeatherForecast.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 59, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
   {
     "name": "DeveloperStoreBack.Application",
     "classes": [
-      { "name": "DeveloperStoreBack.Application.DTOs.ItemDto", "rp": "DeveloperStoreBack.Application_ItemDto.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 10, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeveloperStoreBack.Application.DTOs.ItemDto", "rp": "DeveloperStoreBack.Application_ItemDto.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 11, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Application.DTOs.SaleDto", "rp": "DeveloperStoreBack.Application_SaleDto.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 20, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Application.DTOs.SaleItemDto", "rp": "DeveloperStoreBack.Application_SaleItemDto.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 20, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Application.DTOs.SaleNotificationDto", "rp": "DeveloperStoreBack.Application_SaleNotificationDto.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Application.DTOs.UserLoginDto", "rp": "DeveloperStoreBack.Application_UserLoginDto.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Application.DTOs.UserRegisterDto", "rp": "DeveloperStoreBack.Application_UserRegisterDto.html", "cl": 0, "ucl": 5, "cal": 5, "tl": 13, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Application.Notifications.SaleNotificationService", "rp": "DeveloperStoreBack.Application_SaleNotificationService.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 12, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "DeveloperStoreBack.Application.Services.ItemService", "rp": "DeveloperStoreBack.Application_ItemService.html", "cl": 0, "ucl": 38, "cal": 38, "tl": 67, "cb": 0, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeveloperStoreBack.Application.Services.ItemService", "rp": "DeveloperStoreBack.Application_ItemService.html", "cl": 29, "ucl": 9, "cal": 38, "tl": 67, "cb": 2, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Application.Services.SaleService", "rp": "DeveloperStoreBack.Application_SaleService.html", "cl": 141, "ucl": 17, "cal": 158, "tl": 223, "cb": 29, "tb": 38, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Application.Services.UserService", "rp": "DeveloperStoreBack.Application_UserService.html", "cl": 0, "ucl": 51, "cal": 51, "tl": 90, "cb": 0, "tb": 20, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
   {
     "name": "DeveloperStoreBack.Domain",
     "classes": [
-      { "name": "DeveloperStoreBack.Domain.Entities.Item", "rp": "DeveloperStoreBack.Domain_Item.html", "cl": 0, "ucl": 5, "cal": 5, "tl": 16, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeveloperStoreBack.Domain.Entities.Item", "rp": "DeveloperStoreBack.Domain_Item.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 16, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Domain.Entities.Sale", "rp": "DeveloperStoreBack.Domain_Sale.html", "cl": 14, "ucl": 0, "cal": 14, "tl": 39, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Domain.Entities.SaleItem", "rp": "DeveloperStoreBack.Domain_SaleItem.html", "cl": 6, "ucl": 1, "cal": 7, "tl": 39, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DeveloperStoreBack.Domain.Entities.User", "rp": "DeveloperStoreBack.Domain_User.html", "cl": 0, "ucl": 13, "cal": 13, "tl": 35, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
@@ -280,6 +280,12 @@ var riskHotspots = [
     "metrics": [
       { "value": 72, "exceeded": true },
       { "value": 8, "exceeded": false },
+    ]},
+  {
+    "assembly": "DeveloperStoreBack.Api", "class": "Program", "reportPath": "DeveloperStoreBack.Api_Program.html", "methodName": "<Main>$(System.String[])", "methodShortName": "<Main>$(...)", "fileIndex": 0, "line": 13,
+    "metrics": [
+      { "value": 42, "exceeded": true },
+      { "value": 6, "exceeded": false },
     ]},
 ];
 
