@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DeveloperStoreBack.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/sale")]
     public class SaleController : ControllerBase
     {
         private readonly SaleService _saleService;

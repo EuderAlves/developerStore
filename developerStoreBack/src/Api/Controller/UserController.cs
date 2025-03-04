@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DeveloperStoreBack.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/user")]
     public class UserController : ControllerBase
     {
         private readonly UserService _userService;
@@ -47,8 +47,14 @@ namespace DeveloperStoreBack.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(string id)
         {
+            var user = await _userService.GetUserByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound(new { Message = "Usuário não encontrado." });
+            }
+
             await _userService.DeleteUser(id);
-            return NoContent();
+            return Ok(new { Message = "Usuário deletado com sucesso." });
         }
     }
 }

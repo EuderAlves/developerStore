@@ -43,15 +43,21 @@ namespace DeveloperStoreBack.Application.Services
             return user;
         }
 
-        public async Task DeleteUser(string id)
+        public async Task<bool> DeleteUser(string id)
         {
             var user = await _userRepository.GetUserByIdAsync(id);
             if (user == null)
             {
-                throw new ArgumentException("Usuário não encontrado.");
+                return false;
             }
 
-            await _userRepository.DeleteAsync(id); 
+            await _userRepository.DeleteAsync(id);
+            return true;
+        }
+
+        public async Task<User> GetUserByIdAsync(string id)
+        {
+            return await _userRepository.GetUserByIdAsync(id);
         }
 
         public async Task<bool> Login(UserLoginDto userLoginDto)

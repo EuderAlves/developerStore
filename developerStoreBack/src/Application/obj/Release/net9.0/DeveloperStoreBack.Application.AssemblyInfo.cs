@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeveloperStoreBack.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e050b690ceb270497025a585a783850df8ab2c7f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2adc45b2a15ab5ebb90cdb6314d7e1fb7f679a21")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeveloperStoreBack.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeveloperStoreBack.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
