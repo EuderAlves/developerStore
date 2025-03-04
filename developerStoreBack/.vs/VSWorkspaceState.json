@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DeveloperStoreBack",
-    "\\DeveloperStoreBack\\src",
-    "\\DeveloperStoreBack\\src\\Api",
-    "\\DeveloperStoreBack\\src\\Api\\Controller",
-    "\\DeveloperStoreBack\\src\\Domain",
-    "\\DeveloperStoreBack\\src\\Domain\\Repositories",
-    "\\DeveloperStoreBack\\src\\Infrastructure",
-    "\\DeveloperStoreBack\\src\\Infrastructure\\Data",
-    "\\DeveloperStoreBack\\src\\Infrastructure\\Data\\Contexts"
+    "\\DeveloperStoreBack.Tests\\TestResults\\d50c7031-adac-41c2-be67-d98e8a6df15f",
+    "\\src",
+    "\\src\\Api",
+    "\\src\\Api\\Controller",
+    "\\src\\Domain",
+    "\\src\\Domain\\Repositories",
+    "\\src\\Infrastructure\\Data",
+    "\\src\\Infrastructure\\Data\\Contexts",
+    "\\src\\Infrastructure\\Data\\Repositories"
   ],
+  "SelectedNode": "\\DeveloperStoreBack.Tests",
   "PreviewInSolutionExplorer": false
 }

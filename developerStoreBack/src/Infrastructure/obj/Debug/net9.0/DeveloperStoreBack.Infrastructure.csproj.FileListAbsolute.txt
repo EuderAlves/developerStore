@@ -1,0 +1,16 @@
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\bin\Debug\net9.0\DeveloperStoreBack.Infrastructure.deps.json
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\bin\Debug\net9.0\DeveloperStoreBack.Infrastructure.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\bin\Debug\net9.0\DeveloperStoreBack.Infrastructure.pdb
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\bin\Debug\net9.0\DeveloperStoreBack.Domain.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\bin\Debug\net9.0\DeveloperStoreBack.Domain.pdb
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\DeveloperStoreBack.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\DeveloperStoreBack.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\DeveloperStoreBack.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\DeveloperStoreBack.Infrastructure.AssemblyInfo.cs
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\DeveloperStoreBack.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\DeveloperStoreBack.Infrastructure.sourcelink.json
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\Develope.FD551787.Up2Date
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\DeveloperStoreBack.Infrastructure.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\refint\DeveloperStoreBack.Infrastructure.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\DeveloperStoreBack.Infrastructure.pdb
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Infrastructure\obj\Debug\net9.0\ref\DeveloperStoreBack.Infrastructure.dll
