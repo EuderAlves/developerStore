@@ -1,9 +1,8 @@
 import { createReducer, on } from '@ngrx/store';
 import { setUser } from '../actions/user.actions';
-import { UserModel } from 'src/app/Model/user.model';
 
 export interface UserState {
-  user: UserModel | null;
+  user: any;
 }
 
 export const initialState: UserState = {

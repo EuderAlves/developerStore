@@ -22,4 +22,8 @@ export class AuthService {
       { observe: 'response' }
     );
   }
+
+  getUser(email: string): Observable<any> {
+    return this.http.get(`${this.apiUrlLocalhost}/user/email/${email}`);
+  }
 }

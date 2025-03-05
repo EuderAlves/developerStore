@@ -32,34 +32,42 @@ export class LoginComponent {
   }
 
   onSubmit(): void {
-    debugger;
     if (this.loginForm.valid) {
       const { email, passwordHash } = this.loginForm.value;
       this.isLoading = true;
 
       this.apiAuthService.login(email, passwordHash).subscribe({
         next: (response) => {
+          this.isLoading = false;
           if (response.status === 200) {
-            this.isLoading = false;
-            this.apiSaleService.getUserHistory(email).subscribe({
-              next: (history) => {
-                console.log('Histórico do usuário:', history);
+            this.apiAuthService.getUser(email).subscribe({
+              next: (user: any) => {
+                this.store.dispatch(setUser({ user }));
+
+                this.apiSaleService.getUserHistory(email).subscribe({
+                  next: (history) => {
+                    console.log('Histórico do usuário:', history);
+                  },
+                  error: (err) => {
+                    console.error('Erro ao buscar histórico:', err);
+                  },
+                });
+
+                this.apiItemService.getItems().subscribe({
+                  next: (items) => {
+                    console.log('Itens à venda:', items);
+                  },
+                  error: (err) => {
+                    console.error('Erro ao buscar itens:', err);
+                  },
+                });
+
+                this.router.navigate(['/home']);
               },
               error: (err) => {
-                console.error('Erro ao buscar histórico:', err);
+                console.error('Erro ao buscar usuário:', err);
               },
             });
-
-            this.apiItemService.getItems().subscribe({
-              next: (items) => {
-                console.log('Itens à venda:', items);
-              },
-              error: (err) => {
-                console.error('Erro ao buscar itens:', err);
-              },
-            });
-
-            this.router.navigate(['/home']);
           } else {
             this.errorMessage = 'Erro ao logar';
           }
