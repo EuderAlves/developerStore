@@ -112,12 +112,13 @@ Aqui, você pode visualizar e testar todos os endpoints disponíveis.
 
 ### **Item**
 
-![Item](https://github.com/user-attachments/assets/2ada7d0e-e7dc-4d77-a5a8-31e94b8a6293)
+![image](https://github.com/user-attachments/assets/040b5bfa-ea10-4395-ade1-66835ef36723)
 
 ### **Sale**
 
-![Sale](https://github.com/user-attachments/assets/38daf867-f7ef-4946-a08c-aa52a8b89f95)
+![image](https://github.com/user-attachments/assets/60d78763-91ee-4707-bb12-2c3f740cdb32)
 
 ### **User**
 
-![User](https://github.com/user-attachments/assets/68e058f1-be6e-444b-8e57-5bad9b0b2074)
+![image](https://github.com/user-attachments/assets/109f4224-33c4-46b0-80e7-2f74d61383e5)
+
