@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { StoreModule } from '@ngrx/store';
 import { FeaturesModule } from './features/features.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { StoreModule } from '@ngrx/store';
+import { userReducer } from './store/reducers/user.reducer';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
     FeaturesModule,
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot({ user: userReducer }),
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

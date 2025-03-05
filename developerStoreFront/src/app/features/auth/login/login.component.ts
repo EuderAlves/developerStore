@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Store } from '@ngrx/store';
 import { AuthService } from 'src/app/core/services/auth.service';
 import { SaleService } from 'src/app/core/services/sale.service';
 import { ItemService } from 'src/app/core/services/item.service';
-import { setUser } from 'src/app/store/actions/user.actions';
+import { UserService } from 'src/app/core/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -22,8 +21,8 @@ export class LoginComponent {
     private apiSaleService: SaleService,
     private apiAuthService: AuthService,
     private apiItemService: ItemService,
-    private router: Router,
-    private store: Store
+    private userService: UserService,
+    private router: Router
   ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
@@ -42,20 +41,23 @@ export class LoginComponent {
           if (response.status === 200) {
             this.apiAuthService.getUser(email).subscribe({
               next: (user: any) => {
-                this.store.dispatch(setUser({ user }));
+                console.log('Usuário recebido:', user);
+                this.userService.setUser(user); // Salva o usuário
 
+                // Buscar histórico do usuário
                 this.apiSaleService.getUserHistory(email).subscribe({
                   next: (history) => {
-                    console.log('Histórico do usuário:', history);
+                    this.userService.setUserHistory(history); // Salva o histórico
                   },
                   error: (err) => {
                     console.error('Erro ao buscar histórico:', err);
                   },
                 });
 
+                // Buscar itens à venda
                 this.apiItemService.getItems().subscribe({
                   next: (items) => {
-                    console.log('Itens à venda:', items);
+                    this.userService.setItems(items); // Salva os itens
                   },
                   error: (err) => {
                     console.error('Erro ao buscar itens:', err);

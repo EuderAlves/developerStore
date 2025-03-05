@@ -1,0 +1,50 @@
+<div class="home-container">
+    <header class="header">
+        <h1>Bem-vindo, {{ user?.name }}!</h1>
+        <div class="user-info">
+            <p>Email: {{ user?.email }}</p>
+            <p>Nome da Empresa: {{ user?.companyName }}</p>
+            <p>Tipo de Usuário: {{ user?.userType === 1 ? "Administrador" : "Cliente" }}</p>
+        </div>
+    </header>
+
+    <div class="admin-panel" *ngIf="user?.userType === 1">
+        <h3>Painel de Administração</h3>
+        <div class="cards-container">
+            <mat-card (click)="navigateTo('register-user')">
+                <mat-card-title>Cadastrar Usuário</mat-card-title>
+                <mat-card-content>Adicione um novo usuário ao sistema.</mat-card-content>
+            </mat-card>
+            <mat-card (click)="navigateTo('edit-user')">
+                <mat-card-title>Editar Usuário</mat-card-title>
+                <mat-card-content>Edite as informações de um usuário existente.</mat-card-content>
+            </mat-card>
+            <mat-card (click)="navigateTo('delete-user')">
+                <mat-card-title>Excluir Usuário</mat-card-title>
+                <mat-card-content>Remova um usuário do sistema.</mat-card-content>
+            </mat-card>
+            <mat-card (click)="navigateTo('view-users')">
+                <mat-card-title>Ver Usuários</mat-card-title>
+                <mat-card-content>Veja todos os usuários cadastrados.</mat-card-content>
+            </mat-card>
+            <mat-card (click)="navigateTo('manage-items')">
+                <mat-card-title>Gerenciar Itens</mat-card-title>
+                <mat-card-content>Adicionar, editar ou excluir itens.</mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+
+    <div class="user-panel" *ngIf="user?.userType === 0">
+        <h3>Painel do Usuário</h3>
+        <div class="cards-container">
+            <mat-card (click)="navigateTo('user-history')">
+                <mat-card-title>Histórico de Vendas</mat-card-title>
+                <mat-card-content>Veja seu histórico de vendas.</mat-card-content>
+            </mat-card>
+            <mat-card (click)="navigateTo('purchase-items')">
+                <mat-card-title>Comprar Itens</mat-card-title>
+                <mat-card-content>Selecione itens e finalize a compra.</mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
