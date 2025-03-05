@@ -11,6 +11,6 @@
     "\\src\\Infrastructure\\Data",
     "\\src\\Infrastructure\\Data\\Repositories"
   ],
-  "SelectedNode": "\\src\\Application\\DTOs\\UserLoginDto.cs",
+  "SelectedNode": "\\src\\Infrastructure\\Data\\Repositories\\UserRepository.cs",
   "PreviewInSolutionExplorer": false
 }

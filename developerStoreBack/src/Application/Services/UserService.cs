@@ -92,5 +92,10 @@ namespace DeveloperStoreBack.Application.Services
             var hash = HashPassword(password);
             return hash == storedHash;
         }
+
+        public async Task<User> GetUserByEmailAsync(string email)
+        {
+            return await _userRepository.GetUserByEmailAsync(email);
+        }
     }
 }
