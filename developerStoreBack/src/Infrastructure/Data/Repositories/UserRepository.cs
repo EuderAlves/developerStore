@@ -32,6 +32,11 @@ namespace DeveloperStoreBack.Infrastructure.Data.Repositories
             return await _context.Users.Find(u => u.Email == email).FirstOrDefaultAsync();
         }
 
+        public async Task<User> GetUserDataByEmailAsync(string email)
+        {
+            return await _context.Users.Find(u => u.Email == email).FirstOrDefaultAsync();
+        }
+      
         public async Task DeleteAsync(string id)
         {
             var objectId = ObjectId.Parse(id);

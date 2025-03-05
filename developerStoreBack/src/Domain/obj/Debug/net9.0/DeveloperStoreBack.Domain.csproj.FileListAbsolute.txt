@@ -1,12 +1,12 @@
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\bin\Debug\net9.0\DeveloperStoreBack.Domain.deps.json
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\bin\Debug\net9.0\DeveloperStoreBack.Domain.dll
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\bin\Debug\net9.0\DeveloperStoreBack.Domain.pdb
+C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\DeveloperStoreBack.Domain.csproj.AssemblyReference.cache
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\DeveloperStoreBack.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\DeveloperStoreBack.Domain.AssemblyInfoInputs.cache
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\DeveloperStoreBack.Domain.AssemblyInfo.cs
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\DeveloperStoreBack.Domain.csproj.CoreCompileInputs.cache
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\DeveloperStoreBack.Domain.sourcelink.json
-C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\bin\Debug\net9.0\DeveloperStoreBack.Domain.deps.json
-C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\bin\Debug\net9.0\DeveloperStoreBack.Domain.dll
-C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\bin\Debug\net9.0\DeveloperStoreBack.Domain.pdb
-C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\DeveloperStoreBack.Domain.csproj.AssemblyReference.cache
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\DeveloperStoreBack.Domain.dll
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\refint\DeveloperStoreBack.Domain.dll
 C:\Users\euder\Desktop\worknttdata\developerStore\developerStoreBack\src\Domain\obj\Debug\net9.0\DeveloperStoreBack.Domain.pdb

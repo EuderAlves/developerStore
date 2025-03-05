@@ -8,6 +8,7 @@ namespace DeveloperStoreBack.Domain.Repositories
         Task InsertAsync(User user);
         Task<User> GetUserByIdAsync(string id);
         Task<User> GetUserByEmailAsync(string email);
+        Task<User> GetUserDataByEmailAsync(string email);
         Task DeleteAsync(string id);
     }
 }

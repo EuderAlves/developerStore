@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeveloperStoreBack.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e31e8b851b38f4c18a5d0dad6dd77c94144762f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a1b0665ab18655a1b89742f3b1fae7e53b5c020")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeveloperStoreBack.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeveloperStoreBack.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

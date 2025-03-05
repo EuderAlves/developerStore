@@ -77,6 +77,29 @@ namespace DeveloperStoreBack.Application.Services
             return VerifyPassword(userLoginDto.PasswordHash, user.PasswordHash);
         }
 
+        public async Task<UserDataDto> GetUserDataByEmailAsync(string email)
+        {
+            var user = await _userRepository.GetUserDataByEmailAsync(email);
+            if (user == null)
+            {
+                return null;
+            }
+
+            var userData = new UserDataDto
+            {
+                Id = new IdDto
+                {
+                    Timestamp = user.Id.Timestamp,
+                    CreationTime = user.Id.CreationTime,
+                },
+                Email = user.Email,
+                Name = user.Name,
+                CompanyName = user.CompanyName,
+                UserType = user.UserType
+            };
+            return userData;
+        }
+
         private string HashPassword(string password)
         {
             using (var sha256 = SHA256.Create())
@@ -93,9 +116,6 @@ namespace DeveloperStoreBack.Application.Services
             return hash == storedHash;
         }
 
-        public async Task<User> GetUserByEmailAsync(string email)
-        {
-            return await _userRepository.GetUserByEmailAsync(email);
-        }
+        
     }
 }

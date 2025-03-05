@@ -47,13 +47,13 @@ namespace DeveloperStoreBack.Api.Controllers
         [HttpGet("email/{email}")]
         public async Task<IActionResult> GetUserByEmail(string email)
         {
-            var user = await _userService.GetUserByEmailAsync(email);
-            if (user == null)
+            var userDataDto = await _userService.GetUserDataByEmailAsync(email);
+            if (userDataDto == null)
             {
                 return NotFound(new { Message = "Usuário não encontrado." });
             }
 
-            return Ok(user);
+            return Ok(userDataDto);
         }
 
         [HttpDelete("{id}")]
