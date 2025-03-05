@@ -16,7 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost",
-        builder => builder.WithOrigins("http://localhost:4200", "https://developerstore.onrender.com")
+        builder => builder.WithOrigins("http://localhost:4200", "https://developer-store-5b3vikplk-euders-projects.vercel.app")
                           .AllowAnyHeader()
                           .AllowAnyMethod());
 });
