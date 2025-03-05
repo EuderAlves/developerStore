@@ -1,6 +1,6 @@
-# Developer Store Frontend
+# DeveloperStoreFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
 ## Development server
 
@@ -25,14 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-## Configuração
-
-1. Clone o repositório.
-2. Navegue até a pasta `developerStoreFront`.
-3. Execute `npm install` para instalar as dependências.
-4. Para rodar a aplicação, use `npm run start`.
-
-## API
-
-A aplicação se comunica com a API do backend para gerenciar vendas.

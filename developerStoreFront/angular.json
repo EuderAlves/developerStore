@@ -15,11 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/developer-store-front",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -51,9 +52,12 @@
               "outputHashing": "all"
             },
             "development": {
+              "buildOptimizer": false,
               "optimization": false,
+              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "production"
@@ -62,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "developerStoreFront:build:production"
+              "browserTarget": "developerStoreFront:build:production"
             },
             "development": {
-              "buildTarget": "developerStoreFront:build:development"
+              "browserTarget": "developerStoreFront:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "developerStoreFront:build"
+            "browserTarget": "developerStoreFront:build"
           }
         },
         "test": {
@@ -90,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -99,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "3f0c63b6-e4ab-4f11-8762-3b5b813b19dd"
+    "analytics": "579401dc-1dfc-41e8-a0a2-ad9f37be4065"
   }
 }
