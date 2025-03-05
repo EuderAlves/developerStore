@@ -12,24 +12,31 @@ using DeveloperStoreBack.Application.Notifications;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configuração de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost",
+        builder => builder.WithOrigins("http://localhost:4200")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+});
+
+// Adiciona serviços
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddSingleton<IUserRepository, UserRepository>();
-
 builder.Services.AddSingleton<SaleService>();
 builder.Services.AddSingleton<SaleNotificationService>();
 builder.Services.AddSingleton<ISaleRepository, SaleRepository>();
-
 builder.Services.AddSingleton<ItemService>();
 builder.Services.AddSingleton<IItemRepository, ItemRepository>();
-
 builder.Services.AddSingleton<MongoDbContext>(sp =>
 {
     var settings = builder.Configuration.GetSection("ConnectionStrings");
-    var connectionString = settings["MongoDb"]; 
+    var connectionString = settings["MongoDb"];
     var databaseName = "developer_store";
 
     if (string.IsNullOrEmpty(connectionString) || string.IsNullOrEmpty(databaseName))
@@ -48,6 +55,8 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "DeveloperStore API V1");
     c.RoutePrefix = string.Empty;
 });
+
+app.UseCors("AllowLocalhost");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

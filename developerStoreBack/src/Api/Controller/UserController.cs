@@ -38,10 +38,10 @@ namespace DeveloperStoreBack.Api.Controllers
             var isLoginSuccessful = await _userService.Login(userDto);
             if (!isLoginSuccessful)
             {
-                return Unauthorized("Email ou senha inválidos.");
+                return Unauthorized(new { Message = "Email ou senha inválidos." });
             }
 
-            return Ok("Login bem-sucedido!");
+            return Ok(new { Message = "Login bem-sucedido!" });
         }
 
         [HttpDelete("{id}")]

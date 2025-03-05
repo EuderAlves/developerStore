@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DeveloperStoreBack.Tests",
     "\\src",
     "\\src\\Api",
     "\\src\\Application",
+    "\\src\\Application\\DTOs",
     "\\src\\Domain",
     "\\src\\Domain\\Repositories",
     "\\src\\Infrastructure",
     "\\src\\Infrastructure\\Data",
     "\\src\\Infrastructure\\Data\\Repositories"
   ],
-  "SelectedNode": "\\src\\Domain\\Repositories\\IUserRepository.cs",
+  "SelectedNode": "\\src\\Application\\DTOs\\UserLoginDto.cs",
   "PreviewInSolutionExplorer": false
 }
