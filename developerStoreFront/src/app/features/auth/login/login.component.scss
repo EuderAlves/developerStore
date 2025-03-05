@@ -1,0 +1,48 @@
+$primary-color: #fcbf0b;
+$secondary-color: #003f5c;
+$background-color: #e0e0e0;
+
+body {
+  background-color: $background-color;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+mat-card {
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  mat-card-title {
+    font-size: 24px;
+    color: $secondary-color;
+    text-align: center;
+  }
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
