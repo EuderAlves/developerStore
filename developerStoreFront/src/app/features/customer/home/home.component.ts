@@ -14,7 +14,7 @@ import { UserService } from 'src/app/core/services/user.service';
 })
 export class HomeComponent implements OnInit {
   user$: Observable<any | null>;
-  user: any | null = null; // Armazena os dados do usuário
+  user: any | null = null;
 
   constructor(
     private fb: FormBuilder,
@@ -29,8 +29,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.user$.subscribe((data) => {
-      this.user = data; // Salva os dados do usuário na variável `user`
-      console.log('Dados do usuário no store:', this.user); // Confirma se os dados foram recuperados
+      this.user = data;
+      console.log('Dados do usuário no store:', this.user);
     });
   }
 

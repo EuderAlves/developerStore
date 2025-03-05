@@ -4,9 +4,10 @@ import { LoginComponent } from './login/login.component';
 import { AuthRoutingModule } from 'src/app/auth-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/material/material.module';
+import { RegisterUserComponent } from './register-user/register-user.component';
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [LoginComponent, RegisterUserComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,

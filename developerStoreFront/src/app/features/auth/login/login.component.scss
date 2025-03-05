@@ -1,6 +1,5 @@
-$primary-color: #fcbf0b;
-$secondary-color: #003f5c;
-$background-color: #e0e0e0;
+$primary-color: #003f5c;
+$background-color: #f0f0f0;
 
 body {
   background-color: $background-color;
@@ -18,21 +17,27 @@ mat-card {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
 
-  mat-card-title {
-    font-size: 24px;
-    color: $secondary-color;
-    text-align: center;
-  }
+.login-title {
+  font-size: 24px;
+  color: $primary-color;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  mat-form-field {
-    width: 100%;
-    margin-bottom: 16px;
-  }
+mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
 
-  button {
-    width: 100%;
-  }
+button {
+  width: 100%;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 15px;
 }
 
 .error-message {

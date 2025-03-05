@@ -10,7 +10,6 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
-  // Método para fazer login
   login(email: string, passwordHash: string): Observable<HttpResponse<any>> {
     return this.http.post(
       `${this.apiUrl}/user/login`,
@@ -24,5 +23,11 @@ export class AuthService {
 
   getUser(email: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/user/email/${email}`);
+  }
+
+  registerUser(userData: any): Observable<HttpResponse<any>> {
+    return this.http.post(`${this.apiUrl}/user/register`, userData, {
+      observe: 'response',
+    });
   }
 }

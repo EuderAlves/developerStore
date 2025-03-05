@@ -42,22 +42,20 @@ export class LoginComponent {
             this.apiAuthService.getUser(email).subscribe({
               next: (user: any) => {
                 console.log('Usuário recebido:', user);
-                this.userService.setUser(user); // Salva o usuário
+                this.userService.setUser(user);
 
-                // Buscar histórico do usuário
                 this.apiSaleService.getUserHistory(email).subscribe({
                   next: (history) => {
-                    this.userService.setUserHistory(history); // Salva o histórico
+                    this.userService.setUserHistory(history);
                   },
                   error: (err) => {
                     console.error('Erro ao buscar histórico:', err);
                   },
                 });
 
-                // Buscar itens à venda
                 this.apiItemService.getItems().subscribe({
                   next: (items) => {
-                    this.userService.setItems(items); // Salva os itens
+                    this.userService.setItems(items);
                   },
                   error: (err) => {
                     console.error('Erro ao buscar itens:', err);

@@ -15,46 +15,46 @@
 
   h1 {
     margin: 0;
-    font-size: 2rem; // Tamanho da fonte do título
+    font-size: 2rem;
   }
 
   .user-info {
     display: flex;
-    justify-content: space-around; // Espaçamento uniforme
+    justify-content: space-around;
     margin-top: 10px;
 
     p {
-      margin: 0 10px; // Margem entre os parágrafos
+      margin: 0 10px;
     }
   }
 }
 
 .admin-panel,
 .user-panel {
-  width: 100%; // Faz com que o painel ocupe toda a largura
-  padding: 20px; // Adiciona espaçamento
-  background-color: #f0f0f0; // Cor de fundo do painel
-  border-radius: 8px; // Bordas arredondadas
-  margin-top: 20px; // Margem superior
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // 3 colunas
-  gap: 16px; // Espaço entre os cards
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   margin-top: 20px;
 }
 
 mat-card {
-  cursor: pointer; // Adiciona o cursor de pointer para indicar que é clicável
-  transition: transform 0.2s, box-shadow 0.2s; // Transição suave para efeitos
-  background-color: #ffffff; // Cor de fundo dos cards
-  border: 1px solid #ddd; // Borda dos cards
-  border-radius: 8px; // Bordas arredondadas
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 
   &:hover {
-    transform: scale(1.05); // Aumenta o card ao passar o mouse
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Sombra ao passar o mouse
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
 }
 

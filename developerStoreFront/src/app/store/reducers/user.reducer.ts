@@ -21,7 +21,7 @@ export const initialState: UserState = {
 export const userReducer = createReducer(
   initialState,
   on(setUser, (state, { user }) => ({ ...state, user })),
-  on(clearUser, (state) => ({ ...state, user: null })), // Limpa o usuário
+  on(clearUser, (state) => ({ ...state, user: null })),
   on(setUserHistory, (state, { history }) => ({ ...state, history })),
   on(setItems, (state, { items }) => ({ ...state, items }))
 );

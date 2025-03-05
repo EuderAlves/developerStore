@@ -20,7 +20,7 @@ export class UserService {
 
   setUser(user: any) {
     this.store.dispatch(setUser({ user }));
-    console.log('Usuário salvo no store:', user); // Log para confirmar que o usuário foi salvo
+    console.log('Usuário salvo no store:', user);
   }
 
   clearUser() {
@@ -29,23 +29,23 @@ export class UserService {
 
   setUserHistory(history: any[]) {
     this.store.dispatch(setUserHistory({ history }));
-    console.log('Histórico salvo no store:', history); // Log para confirmar que o histórico foi salvo
+    console.log('Histórico salvo no store:', history);
   }
 
   setItems(items: any[]) {
     this.store.dispatch(setItems({ items }));
-    console.log('Itens salvos no store:', items); // Log para confirmar que os itens foram salvos
+    console.log('Itens salvos no store:', items);
   }
 
   getUser(): Observable<any | null> {
-    return this.store.select((state) => state.user.user); // Seleciona o usuário do store
+    return this.store.select((state) => state.user.user);
   }
 
   getUserHistory(): Observable<any[]> {
-    return this.store.select((state) => state.user.history); // Seleciona o histórico do store
+    return this.store.select((state) => state.user.history);
   }
 
   getItems(): Observable<any[]> {
-    return this.store.select((state) => state.user.items); // Seleciona os itens do store
+    return this.store.select((state) => state.user.items);
   }
 }

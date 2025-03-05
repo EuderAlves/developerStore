@@ -1,6 +1,6 @@
 <div class="login-container">
     <mat-card>
-        <mat-card-title>Login</mat-card-title>
+        <mat-card-title class="login-title">Entrar na Sua Conta</mat-card-title>
         <mat-card-content>
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                 <mat-form-field appearance="fill">
@@ -17,8 +17,12 @@
 
                 <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
 
-                <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Login</button>
+                <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Entrar</button>
             </form>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a routerLink="/register-user">Cadastre-se aqui!</a></p>
+            </div>
 
             <div *ngIf="isLoading" class="loading-spinner">
                 <mat-spinner></mat-spinner>
