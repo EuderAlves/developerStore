@@ -6,10 +6,13 @@ body {
 }
 
 .login-container {
+  background-image: url("https://www.ambev.com.br/sites/g/files/wnfebl10941/files/styles/webp/public/Asset%207.png.webp?itok=lOH8FRUn");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
 }
 
 mat-card {
