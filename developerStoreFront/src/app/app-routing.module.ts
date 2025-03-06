@@ -13,6 +13,7 @@ import { AddItemComponent } from './features/admin/add-item/add-item.component';
 import { EditItemComponent } from './features/admin/edit-item/edit-item.component';
 import { PurchaseItemsComponent } from './features/client/purchase-items/purchase-items.component';
 import { CartComponent } from './features/client/cart/cart.component';
+import { SalesHistoryComponent } from './features/client/sales-history/sales-history.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'edit-item/:id', component: EditItemComponent },
   { path: 'purchase-items', component: PurchaseItemsComponent },
   { path: 'cart', component: CartComponent },
+  { path: 'sales-history', component: SalesHistoryComponent },
 ];
 
 @NgModule({

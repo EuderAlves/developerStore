@@ -5,9 +5,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/material/material.module';
 import { CartComponent } from './cart/cart.component';
 import { PurchaseItemsComponent } from './purchase-items/purchase-items.component';
+import { SalesHistoryComponent } from './sales-history/sales-history.component';
 
 @NgModule({
-  declarations: [CartComponent, PurchaseItemsComponent],
+  declarations: [CartComponent, PurchaseItemsComponent, SalesHistoryComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,

@@ -1,0 +1,65 @@
+.sales-history-container {
+  padding: 20px; // Espaço ao redor do container
+}
+
+.cards-container {
+  display: grid; // Usa grid para dispor os cards
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); // Estilo de grid para os itens
+  gap: 16px; // Espaço entre os cards
+}
+
+mat-card {
+  border: 1px solid #ddd; // Borda dos cards
+  border-radius: 8px; // Bordas arredondadas
+  transition: background-color 0.2s; // Transição suave para cor de fundo
+
+  &:hover {
+    background-color: #e0e0e0; // Cor ao passar o mouse
+  }
+
+  mat-card-content {
+    display: flex; // Flexbox para alinhar o conteúdo
+    flex-direction: column; // Coloca os itens em coluna
+    align-items: center; // Centraliza horizontalmente
+  }
+}
+
+.items-list {
+  width: 100%; // Faz a lista ocupar a largura total
+  margin-top: 10px; // Margem superior para separar da informação anterior
+
+  h4 {
+    margin-bottom: 5px; // Margem inferior para o título
+  }
+
+  ul {
+    list-style-type: none; // Remove marcadores da lista
+    padding: 0; // Remove padding da lista
+  }
+
+  li {
+    padding: 5px 0; // Espaço entre os itens
+  }
+}
+
+.finalized {
+  background-color: #e3f2fd; // Azul claro para vendas finalizadas
+}
+
+.canceled {
+  background-color: #ffebee; // Vermelho claro para vendas canceladas
+}
+
+.status-notification {
+  font-weight: bold; // Destaque para o status
+  color: #f44336; // Cor do texto para status
+}
+
+mat-card-title {
+  margin: 8px;
+  font-size: 18px;
+  color: #003f5c;
+}

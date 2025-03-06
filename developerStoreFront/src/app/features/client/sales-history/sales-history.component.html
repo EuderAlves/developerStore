@@ -1,0 +1,36 @@
+<div class="sales-history-container">
+    <h2>Histórico de Vendas</h2>
+
+    <div class="cards-container">
+        <mat-card *ngFor="let sale of sales" [ngClass]="{'finalized': sale.isFinalized, 'canceled': sale.isCanceled}">
+            <mat-card-title>Compra #{{ sale.saleNumber }}</mat-card-title>
+            <mat-card-content>
+                <p><strong>Data da Compra:</strong> {{ sale.saleDate | date }}</p>
+                <p><strong>Valor Total:</strong> {{ sale.totalValue | currency }}</p>
+
+                <div class="items-list">
+                    <h4>Itens Comprados:</h4>
+                    <ul>
+                        <li *ngFor="let item of sale.items">
+                            <strong>Produto:</strong> {{ item.productId }} - <strong>Quantidade:</strong> {{
+                            item.quantity }}
+                        </li>
+                    </ul>
+                </div>
+
+                <div *ngIf="!sale.isCanceled && !sale.isFinalized">
+                    <button mat-button color="primary" (click)="finalizeSale(sale.id)">Finalizar Compra</button>
+                    <button mat-button color="warn" (click)="cancelSale(sale.id)">Cancelar Compra</button>
+                </div>
+
+                <div *ngIf="sale.isCanceled">
+                    <p class="status-notification">Esta compra foi cancelada.</p>
+                </div>
+
+                <div *ngIf="sale.isFinalized">
+                    <p class="status-notification">Esta compra já foi finalizada.</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

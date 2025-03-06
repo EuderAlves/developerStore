@@ -18,7 +18,6 @@ export class SaleService {
   }
 
   savePurchase(savePurchase: any): Observable<HttpResponse<any>> {
-    debugger;
     return this.http.post<any>(`${this.apiUrl}/sale/register`, savePurchase, {
       observe: 'response',
     });

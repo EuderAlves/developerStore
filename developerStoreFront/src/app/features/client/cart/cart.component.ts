@@ -20,7 +20,7 @@ export class CartComponent implements OnInit {
     private router: Router,
     private snackBar: MatSnackBar,
     private saleService: SaleService,
-    private store: UserService
+    private userService: UserService
   ) {}
 
   ngOnInit(): void {
@@ -29,9 +29,8 @@ export class CartComponent implements OnInit {
   }
 
   savePurchase(): void {
-    debugger;
     var user: any;
-    var userStore = this.store.getUser();
+    var userStore = this.userService.getUser();
     userStore.subscribe((data) => (user = data));
     const transformedArrayItem = this.cart.map((item) => ({
       productId: item.productId,
@@ -66,7 +65,6 @@ export class CartComponent implements OnInit {
   }
 
   cancelPurchase(): void {
-    debugger;
     if (!this.purchaseSave) {
       this.isPurchaseFinalized = true;
       this.openSnackBar('É necessario salvar a compra antes de cancelar!');
