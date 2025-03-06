@@ -49,4 +49,8 @@ export class ManageItemsComponent implements OnInit {
       duration: 3000,
     });
   }
+
+  goBack(): void {
+    this.router.navigate(['/home']);
+  }
 }
