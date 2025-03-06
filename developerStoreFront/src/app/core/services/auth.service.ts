@@ -21,12 +21,21 @@ export class AuthService {
     );
   }
 
+  getAllUsers(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/user/all`);
+  }
   getUser(email: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/user/email/${email}`);
   }
 
   registerUser(userData: any): Observable<HttpResponse<any>> {
     return this.http.post(`${this.apiUrl}/user/register`, userData, {
+      observe: 'response',
+    });
+  }
+
+  updateUser(email: string, userData: any): Observable<HttpResponse<any>> {
+    return this.http.put(`${this.apiUrl}/user/update/${email}`, userData, {
       observe: 'response',
     });
   }
