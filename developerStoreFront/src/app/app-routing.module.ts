@@ -5,6 +5,7 @@ import { HomeComponent } from './features/customer/home/home.component';
 import { RegisterUserComponent } from './features/auth/register-user/register-user.component';
 import { UserListComponent } from './features/admin/user-list/user-list.component';
 import { EditUserComponent } from './features/admin/edit-user/edit-user.component';
+import { DeleteUserComponent } from './features/admin/delete-user/delete-user.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'register-user', component: RegisterUserComponent },
   { path: 'user-list', component: UserListComponent },
   { path: 'edit-user/:id', component: EditUserComponent },
-  // { path: 'view-users', component: ViewUsersComponent }, // Exemplo
+  { path: 'delete-user', component: DeleteUserComponent },
   // { path: 'user-history', component: UserHistoryComponent }, // Exemplo
   // { path: 'purchase-items', component: PurchaseItemsComponent },
 ];

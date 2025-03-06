@@ -9,13 +9,17 @@ import { AuthService } from 'src/app/core/services/auth.service';
 })
 export class UserListComponent implements OnInit {
   users: any;
-  constructor(private userService: AuthService, private router: Router) {
-    this.users = this.userService.getAllUsers();
+  constructor(private authService: AuthService, private router: Router) {
+    this.users = this.authService.getAllUsers();
   }
 
   ngOnInit(): void {}
 
   editUser(userEmail: string): void {
     this.router.navigate(['/edit-user', userEmail]);
+  }
+
+  goBack(): void {
+    this.router.navigate(['/home']);
   }
 }

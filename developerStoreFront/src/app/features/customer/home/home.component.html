@@ -19,10 +19,7 @@
                 <mat-card-title>Editar Usuário</mat-card-title>
                 <mat-card-content>Edite as informações de um usuário existente.</mat-card-content>
             </mat-card>
-            <mat-card (click)="navigateTo('delete-user')">
-                <mat-card-title>Excluir Usuário</mat-card-title>
-                <mat-card-content>Remova um usuário do sistema.</mat-card-content>
-            </mat-card>
+
             <mat-card (click)="navigateTo('view-users')">
                 <mat-card-title>Ver Usuários</mat-card-title>
                 <mat-card-content>Veja todos os usuários cadastrados.</mat-card-content>
@@ -30,6 +27,10 @@
             <mat-card (click)="navigateTo('manage-items')">
                 <mat-card-title>Gerenciar Itens</mat-card-title>
                 <mat-card-content>Adicionar, editar ou excluir itens.</mat-card-content>
+            </mat-card>
+            <mat-card (click)="navigateTo('delete-user')">
+                <mat-card-title>Excluir Usuário</mat-card-title>
+                <mat-card-content>Remova um usuário do sistema.</mat-card-content>
             </mat-card>
         </div>
     </div>

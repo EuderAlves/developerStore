@@ -39,4 +39,8 @@ export class AuthService {
       observe: 'response',
     });
   }
+
+  deleteUser(id: string): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/user/${id}`);
+  }
 }

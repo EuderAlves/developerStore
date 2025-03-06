@@ -1,0 +1,24 @@
+.delete-user-container {
+  padding: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+mat-card {
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+mat-card-title {
+  margin: 8px;
+}
