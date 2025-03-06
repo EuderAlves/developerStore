@@ -17,10 +17,7 @@ export class HomeComponent implements OnInit {
   user: any | null = null;
 
   constructor(
-    private fb: FormBuilder,
-    private apiSaleService: SaleService,
-    private apiAuthService: AuthService,
-    private apiItemService: ItemService,
+    private authService: AuthService,
     private userService: UserService,
     private router: Router
   ) {
@@ -36,5 +33,10 @@ export class HomeComponent implements OnInit {
 
   navigateTo(route: string): void {
     this.router.navigate([route]);
+  }
+
+  logout(): void {
+    this.authService.logout();
+    this.router.navigate(['/login']);
   }
 }

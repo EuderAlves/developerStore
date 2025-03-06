@@ -1,0 +1,35 @@
+<div class="cart-container">
+    <button mat-stroked-button (click)="goBack()" class="back-button">
+        < Voltar</button>
+            <h2>Carrinho de Compras</h2>
+
+            <div class="cart-list">
+                <mat-card *ngFor="let item of cart">
+                    <mat-card-title>{{ item.productId }}</mat-card-title>
+                    <mat-card-content>
+                        <p><strong>Preço Unitário:</strong> {{ item.unitPrice | currency }}</p>
+                        <p><strong>Quantidade:</strong>
+                            <input type="number" [(ngModel)]="item.quantity" (change)="updateItemQuantity(item)" min="1"
+                                max="20" />
+                        </p>
+                        <p><strong>Valor Total:</strong> {{ item.unitPrice * item.quantity | currency }}</p>
+                        <p *ngIf="getDiscount(item) < 1"><strong>Desconto Aplicado:</strong> {{ (1 - getDiscount(item))
+                            * 100 | number: '1.0-0' }}%</p>
+                        <button mat-stroked-button color="warn" (click)="removeItem(item)">Remover</button>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+
+            <div class="cart-summary">
+                <p><strong>Valor Total da Compra:</strong> {{ getTotalValue() | currency }}</p>
+            </div>
+            <div class="button-container">
+                <button mat-stroked-button (click)="savePurchase()" [disabled]="!isPurchasesave">Salvar
+                    Compra</button>
+                <button mat-stroked-button color="primary" (click)="finalizePurchase()"
+                    [disabled]="isPurchaseFinalized && isPurchasesave">Finalizar Compra</button>
+                <button mat-stroked-button color="warn" (click)="cancelPurchase()"
+                    [disabled]="isCancelPurchaseBlocked && isPurchasesave">Cancelar</button>
+            </div>
+
+</div>

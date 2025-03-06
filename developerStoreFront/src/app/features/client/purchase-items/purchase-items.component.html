@@ -1,0 +1,31 @@
+<div class="purchase-items-container">
+    <div class="header">
+        <button mat-stroked-button (click)="goBack()" class="back-button">
+            < Voltar</button>
+                <h2>Comprar Itens</h2>
+                <button mat-stroked-button color="primary" (click)="viewCart()">Ver Carrinho</button>
+    </div>
+
+    <div class="cards-container">
+        <mat-card *ngFor="let item of items">
+            <mat-card-title>{{ item.productId }}</mat-card-title>
+            <mat-card-content>
+                <img [src]="'https://www.ambev.com.br/sites/g/files/wnfebl10941/files/styles/webp/public/' + item.image"
+                    alt="{{ item.productId }}" />
+                <p><strong>Categoria:</strong> {{ item.categoria }}</p>
+                <p><strong>Preço Unitário:</strong> {{ item.unitPrice | currency }}</p>
+
+                <mat-form-field appearance="fill" class="full-width">
+                    <mat-label>Quantidade</mat-label>
+                    <input matInput type="number" [(ngModel)]="item.quantity" min="1" max="20"
+                        (input)="validateQuantity(item)" />
+                </mat-form-field>
+                <div *ngIf="item.quantity > 20" class="error-message">
+                    A quantidade solicitada excede a quantidade maxima permitida de 20!
+                </div>
+
+                <button mat-stroked-button (click)="addToCart(item, item.quantity)">Adicionar ao Carrinho</button>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

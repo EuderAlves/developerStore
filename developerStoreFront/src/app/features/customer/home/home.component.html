@@ -6,6 +6,7 @@
             <p>Nome da Empresa: {{ user?.companyName }}</p>
             <p>Tipo de Usuário: {{ user?.userType === 1 ? "Administrador" : "Cliente" }}</p>
         </div>
+        <button mat-stroked-button (click)="logout()" class="logout-button">Logout</button>
     </header>
 
     <div class="admin-panel" *ngIf="user?.userType === 1">
@@ -37,13 +38,13 @@
     <div class="user-panel" *ngIf="user?.userType === 0">
         <h3>Painel do Usuário</h3>
         <div class="cards-container">
-            <mat-card (click)="navigateTo('user-history')">
-                <mat-card-title>Histórico de Vendas</mat-card-title>
-                <mat-card-content>Veja seu histórico de vendas.</mat-card-content>
-            </mat-card>
             <mat-card (click)="navigateTo('purchase-items')">
                 <mat-card-title>Comprar Itens</mat-card-title>
                 <mat-card-content>Selecione itens e finalize a compra.</mat-card-content>
+            </mat-card>
+            <mat-card (click)="navigateTo('user-history')">
+                <mat-card-title>Histórico de Vendas</mat-card-title>
+                <mat-card-content>Veja seu histórico de vendas.</mat-card-content>
             </mat-card>
         </div>
     </div>

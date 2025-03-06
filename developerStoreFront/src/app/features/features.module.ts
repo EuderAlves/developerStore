@@ -2,11 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthModule } from './auth/auth.module';
 import { CustomerModule } from './customer/customer.module';
-import { UserListComponent } from './admin/user-list/user-list.component';
 import { AdminModule } from './admin/admin.module';
+import { ClientModule } from './client/client.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [CommonModule, AuthModule, CustomerModule, AdminModule],
-  exports: [AuthModule],
+  imports: [
+    CommonModule,
+    AuthModule,
+    CustomerModule,
+    AdminModule,
+    ClientModule,
+  ],
+  exports: [],
+  declarations: [],
 })
 export class FeaturesModule {}

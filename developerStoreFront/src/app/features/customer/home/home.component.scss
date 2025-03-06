@@ -6,6 +6,10 @@
 }
 
 .header {
+  display: flex; // Flexbox para alinhar os itens
+  justify-content: space-between; // Espaça os itens em ambas as extremidades
+  align-items: center; // Alinha verticalmente ao centro
+  padding: 10px;
   width: 100%;
   background-color: #265064c0;
   color: #ffffff;
@@ -18,6 +22,10 @@
     font-size: 2rem;
   }
 
+  .logout-button {
+    margin-left: auto; // Empurra o botão para a direita
+    color: #6200ea; // Cor do botão
+  }
   .user-info {
     display: flex;
     justify-content: space-around;
