@@ -43,7 +43,6 @@ export class EditUserComponent implements OnInit {
       this.authService.updateUser(this.userEmail, updatedUser).subscribe(() => {
         this.openSnackBar('Usuário cadastrado com sucesso!');
         setTimeout(() => this.router.navigate(['/user-list']), 2000);
-        this.router.navigate(['/user-list']);
       });
     }
   }

@@ -1,0 +1,43 @@
+.manage-items-container {
+  padding: 20px; // Espaço ao redor do container
+}
+
+h2 {
+  text-align: center; // Centraliza o título
+  margin-bottom: 20px; // Margem inferior para separar do conteúdo
+}
+
+.cards-container {
+  display: grid; // Usa grid para dispor os cards
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); // Estilo de grid para os itens
+  gap: 16px; // Espaço entre os cards
+}
+
+mat-card {
+  border: 1px solid #ddd; // Borda dos cards
+  border-radius: 8px; // Bordas arredondadas
+  transition: background-color 0.2s; // Transição suave para cor de fundo
+
+  &:hover {
+    background-color: #e0e0e0; // Cor ao passar o mouse
+  }
+
+  mat-card-content {
+    text-align: center; // Centraliza o conteúdo do card
+
+    img {
+      max-width: 100%; // Imagem ocupa a largura total do card
+      height: 180px; // Mantém a proporção da imagem
+      border-radius: 8px 8px 0 0; // Bordas arredondadas na parte superior
+    }
+  }
+}
+
+mat-card-title {
+  margin: 8px;
+  font-size: 18px;
+  color: #003f5c;
+}

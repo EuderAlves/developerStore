@@ -8,6 +8,9 @@ import { EditUserComponent } from './features/admin/edit-user/edit-user.componen
 import { DeleteUserComponent } from './features/admin/delete-user/delete-user.component';
 import { PurchaseHistoryComponent } from './features/admin/purchase-history/purchase-history.component';
 import { UserSalesComponent } from './features/admin/user-sales/user-sales.component';
+import { ManageItemsComponent } from './features/admin/manage-items/manage-items.component';
+import { AddItemComponent } from './features/admin/add-item/add-item.component';
+import { EditItemComponent } from './features/admin/edit-item/edit-item.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -18,6 +21,9 @@ const routes: Routes = [
   { path: 'delete-user', component: DeleteUserComponent },
   { path: 'purchase-history', component: PurchaseHistoryComponent },
   { path: 'user-sales/:email', component: UserSalesComponent },
+  { path: 'manage-items', component: ManageItemsComponent },
+  { path: 'add-item', component: AddItemComponent },
+  { path: 'edit-item/:id', component: EditItemComponent },
 ];
 
 @NgModule({

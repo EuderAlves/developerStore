@@ -57,8 +57,8 @@
                 <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
 
                 <div class="button-container">
-                    <button mat-raised-button color="warn" (click)="cancel()">Cancelar</button>
-                    <button mat-raised-button color="primary" type="submit"
+                    <button mat-stroked-button color="warn" (click)="cancel()">Cancelar</button>
+                    <button mat-stroked-button color="primary" type="submit"
                         [disabled]="registerForm.invalid">Cadastrar</button>
                 </div>
             </form>
