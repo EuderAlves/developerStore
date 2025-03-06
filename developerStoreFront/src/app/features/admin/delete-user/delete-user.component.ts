@@ -22,7 +22,6 @@ export class DeleteUserComponent implements OnInit {
   ngOnInit(): void {}
 
   deleteUser(id: string): void {
-    debugger;
     this.authService.deleteUser(id).subscribe({
       next: () => {
         this.snackBar.open('Usuário deletado com sucesso!', 'Fechar', {
@@ -40,6 +39,6 @@ export class DeleteUserComponent implements OnInit {
   }
 
   goBack(): void {
-    this.router.navigate(['/user-list']);
+    this.router.navigate(['/home']);
   }
 }

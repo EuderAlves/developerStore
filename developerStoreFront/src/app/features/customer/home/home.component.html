@@ -11,15 +11,6 @@
     <div class="admin-panel" *ngIf="user?.userType === 1">
         <h3>Painel de Administração</h3>
         <div class="cards-container">
-            <mat-card (click)="navigateTo('register-user')">
-                <mat-card-title>Cadastrar Usuário</mat-card-title>
-                <mat-card-content>Adicione um novo usuário ao sistema.</mat-card-content>
-            </mat-card>
-            <mat-card (click)="navigateTo('user-list')">
-                <mat-card-title>Editar Usuário</mat-card-title>
-                <mat-card-content>Edite as informações de um usuário existente.</mat-card-content>
-            </mat-card>
-
             <mat-card (click)="navigateTo('purchase-history')">
                 <mat-card-title>Ver Histórico de Compras</mat-card-title>
                 <mat-card-content>Veja o histórico detalhado de compras de cada usuário.</mat-card-content>
@@ -27,6 +18,14 @@
             <mat-card (click)="navigateTo('manage-items')">
                 <mat-card-title>Gerenciar Itens</mat-card-title>
                 <mat-card-content>Adicionar, editar ou excluir itens.</mat-card-content>
+            </mat-card>
+            <mat-card (click)="navigateTo('register-user')">
+                <mat-card-title>Cadastrar Usuário</mat-card-title>
+                <mat-card-content>Adicione um novo usuário ao sistema.</mat-card-content>
+            </mat-card>
+            <mat-card (click)="navigateTo('user-list')">
+                <mat-card-title>Editar Usuário</mat-card-title>
+                <mat-card-content>Edite as informações de um usuário existente.</mat-card-content>
             </mat-card>
             <mat-card (click)="navigateTo('delete-user')">
                 <mat-card-title>Excluir Usuário</mat-card-title>

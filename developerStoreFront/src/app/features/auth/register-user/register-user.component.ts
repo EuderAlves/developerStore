@@ -39,7 +39,6 @@ export class RegisterUserComponent implements OnInit {
 
   ngOnInit(): void {
     this.userService.getUser().subscribe((user) => {
-      debugger;
       if (user) {
         this.userLogged = true;
       } else {
@@ -64,7 +63,6 @@ export class RegisterUserComponent implements OnInit {
         .registerUser({ name, email, passwordHash, companyName, userType })
         .subscribe({
           next: (response) => {
-            debugger;
             if (response.status === 201) {
               this.openSnackBar('Usuário cadastrado com sucesso!');
               setTimeout(
