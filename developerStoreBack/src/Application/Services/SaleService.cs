@@ -61,6 +61,32 @@ namespace DeveloperStoreBack.Application.Services
             };
         }
 
+        public async Task<IEnumerable<SaleReturnDto>> GetSalesByCustomerEmail(string email)
+        {
+            var sales = await _saleRepository.GetSalesByCustomerEmailAsync(email);
+            var salesReturnDto = sales.Select(sale => new SaleReturnDto
+            {
+                Id = sale.Id.ToString(),
+                SaleNumber = sale.SaleNumber,
+                SaleDate = sale.SaleDate,
+                CustomerEmail = sale.CustomerEmail,
+                TotalValue = sale.TotalValue,
+                TotalDiscount = sale.TotalDiscount,
+                Branch = sale.Branch,
+                Items = sale.Items.Select(item => new SaleItemDto
+                {
+                    ProductId = item.ProductId,
+                    Quantity = item.Quantity,
+                    UnitPrice = item.UnitPrice,
+                    Discount = item.Discount,
+                    DiscountPercentage = item.DiscountPercentage
+                }).ToList(),
+                IsCanceled = sale.IsCanceled,
+                IsFinalized = sale.IsFinalized
+            });
+            return salesReturnDto;
+        }
+
         public async Task CancelSale(string id)
         {
             var sale = await _saleRepository.GetSaleByIdAsync(id);
@@ -158,11 +184,6 @@ namespace DeveloperStoreBack.Application.Services
                 Message = "Venda deletada!",
                 SaleId = sale.Id.ToString()
             });
-        }
-
-        public async Task<IEnumerable<Sale>> GetSalesByCustomerEmail(string email)
-        {
-            return await _saleRepository.GetSalesByCustomerEmailAsync(email);
         }
 
         private decimal CalculateTotalValue(List<SaleItem> items, out decimal totalDiscount)

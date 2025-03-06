@@ -26,10 +26,10 @@ namespace DeveloperStoreBack.Api.Controllers
         }
 
         [HttpGet("customer/{email}")]
-        public async Task<ActionResult<IEnumerable<Sale>>> GetSalesByCustomerEmail(string email)
+        public async Task<ActionResult<IEnumerable<SaleReturnDto>>> GetSalesByCustomerEmail(string email)
         {
-            var sales = await _saleService.GetSalesByCustomerEmail(email);
-            return Ok(sales);
+            var salesReturnDto = await _saleService.GetSalesByCustomerEmail(email);
+            return Ok(salesReturnDto); ;
         }
 
         [HttpPost("{id}/cancel")]

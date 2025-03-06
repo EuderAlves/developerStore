@@ -5,7 +5,7 @@ namespace DeveloperStoreBack.Application.DTOs
 {
     public class SaleReturnDto
     {
-        public string Id { get; set; } // ID como string
+        public string Id { get; set; }
         public int SaleNumber { get; set; }
         public DateTime SaleDate { get; set; }
         public string CustomerEmail { get; set; }

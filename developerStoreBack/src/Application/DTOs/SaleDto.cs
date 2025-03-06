@@ -33,5 +33,8 @@ namespace DeveloperStoreBack.Application.DTOs
         public required int Quantity { get; set; }
         public required decimal UnitPrice { get; set; }
         public required decimal Discount { get; set; }
+        public decimal DiscountPercentage { get; set; }
+        public decimal TotalValue => Quantity * UnitPrice - Discount;
+        public bool IsCanceled { get; set; }
     }
 }
