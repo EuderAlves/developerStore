@@ -3,12 +3,16 @@
     "",
     "\\src",
     "\\src\\Api",
+    "\\src\\Api\\Controller",
     "\\src\\Application",
+    "\\src\\Application\\DTOs",
+    "\\src\\Application\\Services",
     "\\src\\Domain",
+    "\\src\\Domain\\Repositories",
     "\\src\\Infrastructure",
     "\\src\\Infrastructure\\Data",
     "\\src\\Infrastructure\\Data\\Repositories"
   ],
-  "SelectedNode": "\\src\\Infrastructure\\Data\\Repositories\\UserRepository.cs",
+  "SelectedNode": "\\src\\Application\\DTOs\\UserDto.cs",
   "PreviewInSolutionExplorer": false
 }

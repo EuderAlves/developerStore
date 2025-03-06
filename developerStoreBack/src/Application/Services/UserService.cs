@@ -100,9 +100,18 @@ namespace DeveloperStoreBack.Application.Services
             return userData;
         }
 
-        public async Task<List<User>> GetAllUsersAsync()
+        public async Task<List<UserDto>> GetAllUsersAsync()
         {
-            return await _userRepository.GetAllUsersAsync();
+            var users = await _userRepository.GetAllUsersAsync();
+
+            return users.Select(user => new UserDto
+            {
+                Id = user.Id.ToString(),
+                Email = user.Email,
+                Name = user.Name,
+                CompanyName = user.CompanyName,
+                UserType = user.UserType
+            }).ToList();
         }
 
         public async Task<User> UpdateUserAsync(string email, UserUpdateDto userDto)

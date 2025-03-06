@@ -46,8 +46,8 @@ namespace DeveloperStoreBack.Api.Controllers
         [HttpGet("all")]
         public async Task<IActionResult> GetAllUsers()
         {
-            var users = await _userService.GetAllUsersAsync();
-            return Ok(users);
+            var userDtos = await _userService.GetAllUsersAsync();
+            return Ok(userDtos);
         }
 
         [HttpGet("email/{email}")]
