@@ -2,7 +2,7 @@ namespace DeveloperStoreBack.Application.DTOs
 {
     public class ItemDto
     {
-        public required string Id { get; set; }
+        public string Id { get; set; }
         public required string ProductId { get; set; }
         public required string Categoria { get; set; }
         public required string Image { get; set; }

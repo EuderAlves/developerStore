@@ -11,6 +11,6 @@
     "\\src\\Infrastructure\\Data",
     "\\src\\Infrastructure\\Data\\Repositories"
   ],
-  "SelectedNode": "\\src\\Application\\DTOs\\ItensAllDto.cs",
+  "SelectedNode": "\\src\\Api\\Controller\\ItemController.cs",
   "PreviewInSolutionExplorer": false
 }
