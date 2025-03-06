@@ -11,6 +11,6 @@ namespace DeveloperStoreBack.Domain.Entities
         public required string ProductId { get; set; }
         public required string Name { get; set; }
         public required decimal UnitPrice { get; set; }
-        public required int StockQuantity { get; set; } // Quantidade em estoque
+        public required int StockQuantity { get; set; }
     }
 }

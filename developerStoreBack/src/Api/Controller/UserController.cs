@@ -43,6 +43,12 @@ namespace DeveloperStoreBack.Api.Controllers
 
             return Ok(new { Message = "Login bem-sucedido!" });
         }
+        [HttpGet("all")]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var users = await _userService.GetAllUsersAsync();
+            return Ok(users);
+        }
 
         [HttpGet("email/{email}")]
         public async Task<IActionResult> GetUserByEmail(string email)
@@ -54,6 +60,24 @@ namespace DeveloperStoreBack.Api.Controllers
             }
 
             return Ok(userDataDto);
+        }
+
+        [HttpPut("update/{email}")]
+        public async Task<IActionResult> UpdateUser(string email, [FromBody] UserUpdateDto userDto)
+        {
+            try
+            {
+                var updatedUser = await _userService.UpdateUserAsync(email, userDto);
+                if (updatedUser == null)
+                {
+                    return NotFound(new { Message = "Usuário não encontrado." });
+                }
+                return Ok(updatedUser);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpDelete("{id}")]

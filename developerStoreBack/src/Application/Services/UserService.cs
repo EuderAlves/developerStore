@@ -100,6 +100,28 @@ namespace DeveloperStoreBack.Application.Services
             return userData;
         }
 
+        public async Task<List<User>> GetAllUsersAsync()
+        {
+            return await _userRepository.GetAllUsersAsync();
+        }
+
+        public async Task<User> UpdateUserAsync(string email, UserUpdateDto userDto)
+        {
+            var user = await _userRepository.GetUserByEmailAsync(email);
+            if (user == null)
+            {
+                return null;
+            }
+
+            
+            user.Name = userDto.Name;
+            user.CompanyName = userDto.CompanyName;
+            user.UserType = userDto.UserType;
+
+            await _userRepository.UpdateAsync(user);
+            return user;
+        }
+
         private string HashPassword(string password)
         {
             using (var sha256 = SHA256.Create())

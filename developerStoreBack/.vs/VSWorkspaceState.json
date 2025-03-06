@@ -2,14 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\Api",
     "\\src\\Application",
-    "\\src\\Application\\Services",
     "\\src\\Domain",
-    "\\src\\Domain\\Entities",
-    "\\src\\Domain\\Repositories",
     "\\src\\Infrastructure",
     "\\src\\Infrastructure\\Data",
     "\\src\\Infrastructure\\Data\\Repositories"
   ],
+  "SelectedNode": "\\src\\Infrastructure\\Data\\Repositories\\UserRepository.cs",
   "PreviewInSolutionExplorer": false
 }

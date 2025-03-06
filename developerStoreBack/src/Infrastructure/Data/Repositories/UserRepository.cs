@@ -36,7 +36,17 @@ namespace DeveloperStoreBack.Infrastructure.Data.Repositories
         {
             return await _context.Users.Find(u => u.Email == email).FirstOrDefaultAsync();
         }
-      
+
+        public async Task<List<User>> GetAllUsersAsync()
+        {
+            return await _context.Users.Find(_ => true).ToListAsync();
+        }
+
+        public async Task UpdateAsync(User user)
+        {
+            await _context.Users.ReplaceOneAsync(u => u.Email == user.Email, user);
+        }
+
         public async Task DeleteAsync(string id)
         {
             var objectId = ObjectId.Parse(id);
