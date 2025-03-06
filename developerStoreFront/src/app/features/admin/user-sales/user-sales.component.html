@@ -1,0 +1,49 @@
+<div class="user-sales-container">
+    <button mat-stroked-button (click)="goBack()" class="back-button">
+        < Voltar</button>
+            <h2>Histórico de Compras de {{ userEmail }}</h2>
+
+            <mat-card class="sales-summary-card" *ngIf="sales$ | async as sales">
+                <mat-card-title>Resumo das Compras</mat-card-title>
+                <mat-card-content>
+                    <div class="sales-summary">
+                        <div>
+                            <strong>Quantidade de Vendas:</strong> {{ sales.length }}
+                        </div>
+                        <div>
+                            <strong>Valor Total Gasto:</strong> {{ getTotalValue(sales) | currency }}
+                        </div>
+                        <div>
+                            <strong>Itens Comprados:</strong> {{ getTotalItems(sales) }}
+                        </div>
+                        <div>
+                            <strong>Compras Finalizadas:</strong> {{ getTotalFinalized(sales) }}
+                        </div>
+                        <div>
+                            <strong>Compras Canceladas:</strong> {{ getTotalCanceled(sales) }}
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
+            <div class="sales-list">
+                <mat-card *ngFor="let sale of sales$ | async as sales"
+                    [ngClass]="{'finalized': sale.isFinalized, 'canceled': sale.isCanceled}">
+                    <mat-card-title>Venda #{{ sale.saleNumber }}
+                        <span *ngIf="sale.isFinalized" class="status"> - Finalizada</span>
+                        <span *ngIf="sale.isCanceled" class="status"> - Cancelada</span>
+                    </mat-card-title>
+                    <mat-card-content>
+                        <p><strong>Data da Venda:</strong> {{ sale.saleDate | date }}</p>
+                        <p><strong>Valor Total:</strong> {{ sale.totalValue | currency }}</p>
+                        <p><strong>Itens:</strong></p>
+                        <ul>
+                            <li *ngFor="let item of sale.items">
+                                {{ item.productId }} - Quantidade: {{ item.quantity }} - Preço: {{ item.unitPrice |
+                                currency }}
+                            </li>
+                        </ul>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+</div>

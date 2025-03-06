@@ -1,0 +1,15 @@
+<div class="purchase-history-container">
+    <button mat-stroked-button (click)="goBack()" class="back-button">
+        < Voltar</button>
+            <h2>Usuários Cadastrados</h2>
+            <div class="cards-container">
+                <mat-card *ngFor="let user of (users | async)">
+                    <mat-card-title>{{ user.name }}</mat-card-title>
+                    <mat-card-content>
+                        <p><strong>Email:</strong> {{ user.email }}</p>
+                        <p><strong>Nome da Empresa:</strong> {{ user.companyName }}</p>
+                        <button mat-button (click)="viewUserHistory(user.email)">Ver Histórico de Compras</button>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+</div>

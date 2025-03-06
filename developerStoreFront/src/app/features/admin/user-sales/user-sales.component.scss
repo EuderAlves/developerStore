@@ -1,0 +1,57 @@
+.user-sales-container {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sales-summary-card {
+  margin-bottom: 20px;
+}
+
+.sales-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.summary-item {
+  background-color: #e0f7fa;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.sales-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+mat-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.finalized {
+  background-color: #e3f2fd;
+}
+
+.canceled {
+  background-color: #ffebee;
+}
+
+.status {
+  font-weight: bold;
+  color: #f44336;
+}
+
+mat-card-title {
+  margin: 8px;
+}

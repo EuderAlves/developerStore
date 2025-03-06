@@ -6,9 +6,11 @@ import { MaterialModule } from 'src/app/material/material.module';
 import { UserListComponent } from './user-list/user-list.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { DeleteUserComponent } from './delete-user/delete-user.component';
+import { PurchaseHistoryComponent } from './purchase-history/purchase-history.component';
+import { UserSalesComponent } from './user-sales/user-sales.component';
 
 @NgModule({
-  declarations: [UserListComponent, EditUserComponent, DeleteUserComponent],
+  declarations: [UserListComponent, EditUserComponent, DeleteUserComponent, PurchaseHistoryComponent, UserSalesComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,

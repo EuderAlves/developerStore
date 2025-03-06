@@ -34,12 +34,12 @@ export class DeleteUserComponent implements OnInit {
         console.error('Erro ao deletar usuário:', err);
         this.snackBar.open('Erro ao deletar usuário', 'Fechar', {
           duration: 3000,
-        }); // Mensagem de erro
+        });
       },
     });
   }
 
   goBack(): void {
-    this.router.navigate(['/user-list']); // Navega de volta para a lista de usuários
+    this.router.navigate(['/user-list']);
   }
 }

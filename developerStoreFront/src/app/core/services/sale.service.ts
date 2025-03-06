@@ -11,8 +11,8 @@ export class SaleService {
 
   constructor(private http: HttpClient) {}
 
-  getUserHistory(email: string): Observable<any> {
-    return this.http.get(
+  getUserHistory(email: string): Observable<any[]> {
+    return this.http.get<any[]>(
       `${this.apiUrl}/sale/customer/${encodeURIComponent(email)}`
     );
   }
