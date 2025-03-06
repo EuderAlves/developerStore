@@ -24,8 +24,8 @@ namespace DeveloperStoreBack.Api.Controllers
             return CreatedAtAction(nameof(GetItemById), new { id = item.Id }, item);
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ItemDto>>> GetAllItems()
+        [HttpGet("all")]
+        public async Task<ActionResult<IEnumerable<ItensAllDto>>> GetAllItems()
         {
             var items = await _itemService.GetAllItems();
             return Ok(items);

@@ -22,8 +22,9 @@ namespace DeveloperStoreBack.Application.Services
             var item = new Item
             {
                 ProductId = itemDto.ProductId,
-                Name = itemDto.Name,
+                Categoria = itemDto.Categoria,
                 UnitPrice = itemDto.UnitPrice,
+                Image = itemDto.Image,
                 StockQuantity = itemDto.StockQuantity
             };
 
@@ -31,9 +32,10 @@ namespace DeveloperStoreBack.Application.Services
             return item;
         }
 
-        public async Task<IEnumerable<Item>> GetAllItems()
+        public async Task<IEnumerable<ItensAllDto>> GetAllItems()
         {
-            return await _itemRepository.GetAllItemsAsync();
+            var items = await _itemRepository.GetAllItemsAsync();
+            return items.Select(ItensAllDto.FromItem).ToList();
         }
 
         public async Task<Item> GetItemById(string id)
@@ -52,8 +54,9 @@ namespace DeveloperStoreBack.Application.Services
             if (existingItem != null)
             {
                 existingItem.ProductId = itemDto.ProductId;
-                existingItem.Name = itemDto.Name;
+                existingItem.Categoria = itemDto.Categoria;
                 existingItem.UnitPrice = itemDto.UnitPrice;
+                existingItem.Image = itemDto.Image;
                 existingItem.StockQuantity = itemDto.StockQuantity;
                 await _itemRepository.UpdateAsync(existingItem);
             }

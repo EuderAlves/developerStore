@@ -2,14 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Application",
-    "\\src\\Application\\DTOs",
-    "\\src\\Application\\Services",
+    "\\src\\Api",
+    "\\src\\Api\\Controller",
     "\\src\\Domain",
+    "\\src\\Domain\\Entities",
     "\\src\\Domain\\Repositories",
     "\\src\\Infrastructure",
     "\\src\\Infrastructure\\Data",
     "\\src\\Infrastructure\\Data\\Repositories"
   ],
+  "SelectedNode": "\\src\\Application\\DTOs\\ItensAllDto.cs",
   "PreviewInSolutionExplorer": false
 }
