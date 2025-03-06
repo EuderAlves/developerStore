@@ -21,8 +21,8 @@ namespace DeveloperStoreBack.Api.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] SaleDto saleDto)
         {
-            var sale = await _saleService.RegisterSale(saleDto);
-            return CreatedAtAction(nameof(Register), new { id = sale.Id }, sale);
+            var saleReturnDto = await _saleService.RegisterSale(saleDto);
+            return CreatedAtAction(nameof(Register), new { id = saleReturnDto.Id }, saleReturnDto); // Retorna o DTO com Id como string
         }
 
         [HttpGet("customer/{email}")]

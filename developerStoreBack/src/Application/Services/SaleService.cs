@@ -19,7 +19,7 @@ namespace DeveloperStoreBack.Application.Services
             _notificationService = notificationService;
         }
 
-        public async Task<Sale> RegisterSale(SaleDto saleDto)
+        public async Task<SaleReturnDto> RegisterSale(SaleDto saleDto)
         {
             var nextSaleNumber = await _saleRepository.GetNextSaleNumberAsync();
 
@@ -39,13 +39,26 @@ namespace DeveloperStoreBack.Application.Services
 
             await _saleRepository.InsertAsync(sale);
 
-            _notificationService.Notify(new SaleNotificationDto
+            // Retorna um DTO com o Id como string
+            return new SaleReturnDto
             {
-                Message = "Venda criada com sucesso!",
-                SaleId = sale.Id.ToString()
-            });
-
-            return sale;
+                Id = sale.Id.ToString(), // Converte o ObjectId para string
+                SaleNumber = sale.SaleNumber,
+                SaleDate = sale.SaleDate,
+                CustomerEmail = sale.CustomerEmail,
+                TotalValue = sale.TotalValue,
+                TotalDiscount = sale.TotalDiscount,
+                Branch = sale.Branch,
+                Items = sale.Items.Select(item => new SaleItemDto
+                {
+                    ProductId = item.ProductId,
+                    Quantity = item.Quantity,
+                    UnitPrice = item.UnitPrice,
+                    Discount = item.Discount
+                }).ToList(),
+                IsCanceled = sale.IsCanceled,
+                IsFinalized = sale.IsFinalized
+            };
         }
 
         public async Task CancelSale(string id)
