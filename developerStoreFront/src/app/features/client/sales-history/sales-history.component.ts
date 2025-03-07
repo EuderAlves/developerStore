@@ -56,6 +56,6 @@ export class SalesHistoryComponent implements OnInit {
   }
 
   goBack(): void {
-    this.router.navigate(['/purchase-items']);
+    this.router.navigate(['/home']);
   }
 }
