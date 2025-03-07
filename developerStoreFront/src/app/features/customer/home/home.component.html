@@ -6,7 +6,7 @@
             <p>Nome da Empresa: {{ user?.companyName }}</p>
             <p>Tipo de Usuário: {{ user?.userType === 1 ? "Administrador" : "Cliente" }}</p>
         </div>
-        <button mat-stroked-button (click)="logout()" class="logout-button">Logout</button>
+        <button mat-raised-button color="warn" (click)="logout()" class="logout-button">Sair</button>
     </header>
 
     <div class="admin-panel" *ngIf="user?.userType === 1">

@@ -23,13 +23,12 @@
             <div class="cart-summary">
                 <p><strong>Valor Total da Compra:</strong> {{ getTotalValue() | currency }}</p>
             </div>
-            <div class="button-container">
+            <mat-card-actions align="end" class="button-container">
                 <button mat-stroked-button (click)="savePurchase()" [disabled]="!isPurchasesave">Salvar
                     Compra</button>
                 <button mat-stroked-button color="primary" (click)="finalizePurchase()"
                     [disabled]="isPurchaseFinalized && isPurchasesave">Finalizar Compra</button>
                 <button mat-stroked-button color="warn" (click)="cancelPurchase()"
                     [disabled]="isCancelPurchaseBlocked && isPurchasesave">Cancelar</button>
-            </div>
-
+            </mat-card-actions>
 </div>

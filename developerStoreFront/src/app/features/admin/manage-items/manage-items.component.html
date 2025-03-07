@@ -21,9 +21,10 @@
                         <p><strong>Categoria:</strong> {{ item.categoria }}</p>
                         <p><strong>Preço Unitário:</strong> {{ item.unitPrice | currency }}</p>
                         <p><strong>Quantidade em Estoque:</strong> {{ item.stockQuantity }}</p>
-                        <button mat-stroked-button color="warn" (click)="deleteItem(item.id)">Excluir</button>
-                        <button mat-stroked-button (click)="editItem(item.id)">Editar</button>
                     </mat-card-content>
+                    <mat-card-actions align="end"><button mat-stroked-button color="warn"
+                            (click)="deleteItem(item.id)">Excluir</button>
+                        <button mat-stroked-button (click)="editItem(item.id)">Editar</button></mat-card-actions>
                 </mat-card>
             </div>
 </div>

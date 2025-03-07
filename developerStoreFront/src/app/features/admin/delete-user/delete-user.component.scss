@@ -4,7 +4,7 @@
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
 }
 
@@ -13,6 +13,8 @@ mat-card {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 
   &:hover {
     background-color: #e0e0e0;

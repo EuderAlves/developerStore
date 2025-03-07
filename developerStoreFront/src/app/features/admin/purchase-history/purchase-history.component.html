@@ -8,9 +8,12 @@
                     <mat-card-content>
                         <p><strong>Email:</strong> {{ user.email }}</p>
                         <p><strong>Nome da Empresa:</strong> {{ user.companyName }}</p>
+
+                    </mat-card-content>
+                    <mat-card-actions align="end">
                         <button mat-stroked-button (click)="viewUserHistory(user.email)">Ver Histórico de
                             Compras</button>
-                    </mat-card-content>
+                    </mat-card-actions>
                 </mat-card>
             </div>
 </div>

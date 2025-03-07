@@ -22,20 +22,25 @@ export class DeleteUserComponent implements OnInit {
   ngOnInit(): void {}
 
   deleteUser(id: string): void {
-    this.authService.deleteUser(id).subscribe({
-      next: () => {
-        this.snackBar.open('Usuário deletado com sucesso!', 'Fechar', {
-          duration: 3000,
-        });
-        this.users = this.authService.getAllUsers();
-      },
-      error: (err) => {
-        console.error('Erro ao deletar usuário:', err);
-        this.snackBar.open('Erro ao deletar usuário', 'Fechar', {
-          duration: 3000,
-        });
-      },
-    });
+    const confirmation = confirm(
+      'Tem certeza que deseja excluir este usuário?'
+    );
+    if (confirmation) {
+      this.authService.deleteUser(id).subscribe({
+        next: () => {
+          this.snackBar.open('Usuário deletado com sucesso!', 'Fechar', {
+            duration: 3000,
+          });
+          this.users = this.authService.getAllUsers();
+        },
+        error: (err) => {
+          console.error('Erro ao deletar usuário:', err);
+          this.snackBar.open('Erro ao deletar usuário', 'Fechar', {
+            duration: 3000,
+          });
+        },
+      });
+    }
   }
 
   goBack(): void {

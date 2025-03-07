@@ -8,8 +8,10 @@
                     <mat-card-content>
                         <p><strong>Email:</strong> {{ user.email }}</p>
                         <p><strong>Nome da Empresa:</strong> {{ user.companyName }}</p>
-                        <button mat-stroked-button color="warn" (click)="deleteUser(user.id)">Excluir</button>
                     </mat-card-content>
+                    <mat-card-actions align="end">
+                        <button mat-stroked-button color="warn" (click)="deleteUser(user.id)">Excluir</button>
+                    </mat-card-actions>
                 </mat-card>
             </div>
 </div>
