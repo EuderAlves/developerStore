@@ -11,6 +11,7 @@ O projeto fornece uma API para gerenciar vendas, produtos e clientes, utilizando
 
 A estrutura segue os padrões de **DDD**, organizando o código em camadas claras:
 
+
 ```plaintext
 DeveloperStoreBack
 │
@@ -122,3 +123,82 @@ Aqui, você pode visualizar e testar todos os endpoints disponíveis.
 
 ![image](https://github.com/user-attachments/assets/109f4224-33c4-46b0-80e7-2f74d61383e5)
 
+# DeveloperStoreFront
+
+## Descrição do Projeto Front
+
+O **DeveloperStoreFront** é uma aplicação que segue os princípios de **Componetização** e é construída com **Amgular 10**.  
+O projeto fornece uma aplicação web com visual clean, rapida e eficiente em compra e acompanhamento de vendas.
+
+---
+
+## Estrutura do Projeto
+
+```plaintext
+└── src
+    ├───app
+    │   ├───core
+    │   │   └───services
+    │   │       └───utils
+    │   ├───features
+    │   │   ├───admin
+    │   │   │   ├───add-item
+    │   │   │   ├───delete-user
+    │   │   │   ├───edit-item
+    │   │   │   ├───edit-user
+    │   │   │   ├───manage-items
+    │   │   │   ├───purchase-history
+    │   │   │   ├───user-list
+    │   │   │   └───user-sales
+    │   │   ├───auth
+    │   │   │   ├───user-list
+    │   │   │   ├───user-list
+    │   │   │   └───user-sales
+    │   │   ├───auth
+    │   │   │   ├───login
+    │   │   │   └───register-user
+    │   │   ├───client
+    │   │   │   ├───cart
+    │   │   │   ├───purchase-items
+    │   │   │   └───sales-history
+    │   │   └───customer
+    │   │       └───home
+    │   ├───material
+    │   ├───Model
+    │   └───store
+    │       ├───actions
+    │       └───reducers
+    └───assets
+```
+---
+
+## Clonando o Projeto
+
+Para clonar o projeto, siga os passos abaixo:
+
+`git clone https://github.com/EuderAlves/developerStore.git cd developerStore/DeveloperStoreFront`
+
+---
+
+## Executando o Projeto
+
+1. Desinstale o Angular CLI versão 17 (se instalado):
+
+npm uninstall -g @angular/cli
+
+2. Instale o Angular CLI versão 16:
+
+npm install -g @angular/cli@16.0.0
+
+3. Instale as dependências do projeto:
+
+npm install
+
+4. Inicie a aplicação:
+
+npm run start
+
+7. A aplicação estará disponível em http://localhost:4200.
+   A Aplicação está exposta online na seguinte URL: https://developer-store.vercel.app/.
+
+---
